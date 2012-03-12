@@ -42,16 +42,15 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #EEE; color: #111; text-shadow: none; }
+::selection { background: #EEE; color: #111; text-shadow: none; }
 
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
+a, a:visited { color: #4183C4; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 
@@ -291,7 +290,57 @@ td { vertical-align: top; }
   h2, h3 { page-break-after: avoid; }
 }
 
-#main {
+body {
+  background: #1A1E1F;
+  color: #EEE;
+}
+
+header {
+  margin:6em 0;
+  text-align:center;
+}
+
+header h1 {
+  margin:0;
+  font-size:4em;
+}
+
+header h2 {
+  color: #999;
+}
+
+footer {
+  clear:both;
+  font-size:.8em;
+  color: #666;
+}
+
+.wrapper {
   width: 950px;
+  overflow: hidden;
   margin: 0 auto;
+}
+
+#main {
+  margin:4em 0;
+}
+
+.subscription {
+  text-align: center;
+  width:300px;
+  margin:0 auto;
+}
+
+.subscription a {
+  padding: 1em;
+  border-radius: 10px;
+  background: #4183C4;
+  color: #FFF;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+
+.subscription a:hover {
+  background: #06E;
 }
