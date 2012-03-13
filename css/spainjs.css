@@ -302,11 +302,14 @@ header {
 
 header h1 {
   margin:0;
-  font-size:4em;
+  font-size:5em;
   font-family: 'Orbitron', sans-serif;
+  color: #DDD;
+  text-shadow: 1px 1px #FFF, -1px -1px #666;
 }
 
 header h2 {
+  margin-top:0;
   color: #999;
 }
 
@@ -323,16 +326,25 @@ footer {
 }
 
 #main {
-  margin:4em 0;
+  margin:5em auto 9em;
 }
 
-.subscription {
+section {
+  width:24em;
+  margin:0 auto;
+}
+
+section p {
+  text-align:center
+}
+
+.button {
   text-align: center;
   width:300px;
   margin:0 auto;
 }
 
-.subscription a {
+.button a {
   padding: 1em;
   border-radius: 10px;
   background: #4183C4;
