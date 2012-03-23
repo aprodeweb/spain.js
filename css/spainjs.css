@@ -326,12 +326,20 @@ footer {
 }
 
 #main {
-  margin:5em auto 9em;
+  margin:5em auto;
 }
 
 section {
+}
+
+section#prescription {
   width:24em;
   margin:0 auto;
+  margin-bottom:8em;
+}
+
+section h2 {
+  font-size:1em;
 }
 
 section p {
