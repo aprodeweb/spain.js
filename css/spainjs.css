@@ -296,7 +296,7 @@ body {
 }
 
 header {
-  margin:6em 0 2em;
+  margin:6em 0;
   text-align:center;
 }
 
@@ -309,6 +309,12 @@ header h1 {
 }
 
 header h2 {
+  margin-top:0;
+  margin-bottom:0;
+  color: #DDD;
+}
+
+header h3 {
   margin-top:0;
   color: #999;
 }
@@ -323,32 +329,39 @@ footer {
   width: 950px;
   overflow: hidden;
   margin: 0 auto;
+  overflow:hidden;
+}
+
+nav {
+  float:right;
+  width: 200px;
+  padding:0;
+}
+
+nav p {
+  line-height: 1em;
+  margin: 0 0 .5em 0;
+  padding: 0 0 .5em 0;
+  border-bottom: 1px dashed #333;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 #main {
-  margin:5em auto;
+  width:670px;
+  margin:0 10px 0 0;
 }
 
-section {
-}
-
-section#prescription {
-  width:24em;
-  margin:0 auto;
-  margin-bottom:8em;
-}
-
-section h2 {
-  font-size:1em;
-}
-
-section p {
-  text-align:center
+#prescription {
+  text-align: center;
+  padding: .5em 1em;
+  background: #222;
 }
 
 .button {
   text-align: center;
-  width:300px;
   margin:0 auto;
 }
 
@@ -361,7 +374,44 @@ section p {
   font-weight:bold;
 }
 
-
-.subscription a:hover {
+.button a:hover {
   background: #06E;
+}
+
+section { margin-bottom:5em }
+section p { font-size:.8em }
+section h2, nav h2 {
+  font-size:1em;
+}
+
+#location img {
+  margin-right:17px;
+  margin-bottom:2em;
+}
+#location img.last {margin-right:0}
+
+footer {
+  border-top: 1px solid #333;
+  padding-top: 1em;
+  overflow:hidden;
+  margin-bottom: 2em;
+}
+
+footer section {
+  margin:0;
+}
+
+footer p { margin-top:0 }
+footer .mail {
+  padding:2px 0 2px 30px;
+  background: url('../imgs/mail.png') 4px 0 no-repeat;
+}
+
+footer .twitter {
+  padding:2px 0 2px 30px;
+  background: url('../imgs/twitter.png') top left no-repeat;
+}
+
+footer #organization {
+  width: 72%;
 }

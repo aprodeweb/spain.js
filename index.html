@@ -12,8 +12,15 @@
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Spain.js</title>
-  <meta name="description" content="">
+  <title>Spain.js - A Summer JavaScript Conference in Madrid, Spain</title>
+  <meta name="keywords" content="Javascript Spain Madrid" /> 
+  <meta name="description" content="A Summer JavaScript Conference in Madrid, Spain" />
+  <meta name="ROBOTS" content="ALL" />
+
+    <!-- GEO --> 
+  <meta name="geo.country" content="ES" /> 
+  <meta name="dc.language" content="es" /> 
+  <meta name="geo.placename" content="Madrid" />
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
   <meta name="viewport" content="width=device-width">
@@ -27,7 +34,7 @@
   <!-- All JavaScript at the bottom, except this Modernizr build.
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="./js/libs/modernizr.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Orbitron:900,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -37,35 +44,82 @@
 
   <div class="wrapper">
     <header>
-      <h1>Spain.js</h1>
-      <h2>A Summer JavaScript Conference in Madrid, Spain.</h2>
- 	  <h3>JULY 6 - 7, 2012</h3>
+      <hgroup>
+        <h1>Spain.js</h1>
+        <h2>A Summer JavaScript Conference in Spain</h2>
+        <h3>July 6 - 7, 2012 -  Florida Park (Parque del Retiro) Madrid</h3>
+      </hgroup>
     </header>
+
+    <nav>
+      <p><a href="#location" title="where the event will take place">Location</a></p>
+      <p><a href="#directions" title="Address and transport to get to the venue of the event">Directions</a></p>
+      <p><a href="#partners" title="Some friends that help us make this possible">Partners</a></p>
+    </nav>
 
     <div id="main" role="main">
 
       <section id="prescription">
-      <p>If you want to know about our news</p>
-      <div class="button">
-        <!-- // MAILCHIMP SUBSCRIBE CODE \\ -->
-        <a href="http://eepurl.com/jZDlX">Subscribe to our newsletter</a>
-        <!-- \\ MAILCHIMP SUBSCRIBE LINK // -->
-      </div>
+        <p>If you want to know about our news and have priority to buy a ticket
+        <span class="button">
+          <a href="http://eepurl.com/jZDlX">Pre-register to Spain.js</a>
+        </span></p>
       </section>
+
+      <section id="location">
+        <h2>Location</h2>
+
+        <p>Ferdinand VII, in the early nineteenth century, commissioned to
+        build recreation of Elizabeth II, a Persian-style building, that the
+        queen used as a hunting lodge and then meetings at the plot of land of the
+        royal family. By donating the Crown to the people of Madrid Retiro
+        Park, this old building became the first chapel, in the early and mid
+        twentieth century the same spa, party room. Since then, a place where
+        you can enjoy both a flamenco show and the celebration of any
+        event, <a href="http://www.floridapark.net">Florida Park</a>.</p>
+        
+        <img src="./imgs/florida3.jpg" alt="Building of Florida Park" title="Building of Florida Park" />
+        <img src="./imgs/florida1.jpg" alt="Lounge of Florida Park" title="Lounge of Florida Park" />
+        <img src="./imgs/florida2.jpg" class="last" alt="Stage of Florida Park" title="Stage of Florida Park" />
+      </section>
+
+      <section id="directions">
+        <h2>Directions</h2>
+      
+        <p>Florida Park is located in the Parque del Retiro, Madrid. The
+        nearest metro station is Retiro and Ibiza.</p>
+
+        <p>You can reach Madrid by plane to Barajas airport, from where you will catch a train or subway to get to the center of Madrid, or by train to the Atocha station located 10 min walk from Parque del Retiro.</p>
+
+        <iframe width="670" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Paseo+de+Panam%C3%A1+1,+Madrid,+Spain&amp;aq=&amp;sll=40.418462,-3.678231&amp;sspn=0.004321,0.007317&amp;ie=UTF8&amp;hq=&amp;hnear=Paseo+de+Panam%C3%A1,+1,+28009+Madrid,+Comunidad+de+Madrid,+Spain&amp;t=m&amp;view=map&amp;ll=40.42467,-3.679733&amp;spn=0.022869,0.057507&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+      </section>
+
 
       <section id="partners">
         <h2>Media Partners</h2>
-        <a href="http://betabeers.com" title="Betabeers | Reunión mensual de desarrolladores web y apps" rel="partner"><img src="imgs/partners/betabeers.png" alt="Betabeers"></a>
+        <a href="http://betabeers.com" title="Betabeers | Reunión mensual de desarrolladores web y apps" rel="partner"><img src="./imgs/partners/betabeers.png" alt="Betabeers"></a>
       </section>
 
     </div>
 
     <footer>
-      <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB).</p>
-      
-      <p><a href="mailto:info@aprodeweb.es">Send us an email</a> if you'd like to join us!</p>
 
-      <p>Follow <a href="https://twitter.com/#!/spainjs">@spainjs</a> on Twitter to knows about our news.</p>
+      <section id="organization">
+        <p><strong>Spain.js</strong> is a non-profit
+        volunteer-driven event run by the Spanish Association for
+        Promoting Web Development (APRODEWEB) managed by 
+        <a href="http://twitter.com/#!/samlown">Sam Lown</a>,
+        <a href="http://twitter.com/#!/rafaelrebolleda">Rafael Rebolleda</a>,
+        <a href="http://twitter.com/#!/lpsandroni">Lorena P. Sandroni</a>,
+        <a href="http://twitter.com/#!/ialcazar">Israel Alcázar</a>,
+        <a href="http://twitter.com/#!/eamodeorubio">Enrique Amodeo</a>,
+        <a href="http://twitter.com/#!/oinak">Fernando Martinez</a> and
+        <a href="http://twitter.com/#!/arctarus">Gabriel Ortuño</a>.
+      </p>
+
+        <p class="mail"><a href="mailto:info@aprodeweb.es">Send us an email</a> if you'd like to join us!</p>
+
+        <p class="twitter">Follow <a href="https://twitter.com/#!/spainjs">@spainjs</a> on Twitter to knows about our news.</p>
     </footer>
   </div>
 
@@ -74,21 +128,27 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <!-- scripts -->
+  <script src="./js/libs/jquery.smooth-scroll.min.js"></script>
+  <script src="./js/spain.js"></script>
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+  mathiasbynens.be/notes/async-analytics-snippet -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30380926-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
   </script>
+
 </body>
 </html>
