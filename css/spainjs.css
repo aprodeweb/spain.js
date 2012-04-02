@@ -333,9 +333,10 @@ footer {
 }
 
 nav {
-  float:right;
   width: 200px;
   padding:0;
+  position:fixed;
+  right:15em;
 }
 
 nav p {
