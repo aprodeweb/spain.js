@@ -336,7 +336,7 @@ nav {
   width: 200px;
   padding:0;
   position:fixed;
-  right:12em;
+  left: 75%;
 }
 
 nav p {
@@ -351,7 +351,8 @@ nav a {
 }
 
 #main {
-  width:670px;
+  width:72%;
+  min-with:670px;
   margin:0 10px 0 0;
 }
 
