@@ -417,3 +417,8 @@ footer .twitter {
 footer #organization {
   width: 72%;
 }
+
+img.partner{
+	width:150px;
+	height:100px;
+}
