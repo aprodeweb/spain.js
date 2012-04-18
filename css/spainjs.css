@@ -64,7 +64,7 @@ a:hover, a:active { outline: 0; }
 
 abbr[title] { border-bottom: 1px dotted; }
 
-b, strong { font-weight: bold; }
+b, strong { font-weight:900; color:#FFA;}
 
 blockquote { margin: 1em 40px; }
 
@@ -381,6 +381,11 @@ nav a {
 }
 
 section { margin-bottom:5em }
+div.c4p p{
+	font-size:.9em;
+	text-align:left;
+	line-height: 1.5em;
+}
 section p { font-size:.8em }
 section h2, nav h2 {
   font-size:1.5em;
