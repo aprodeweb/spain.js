@@ -40,17 +40,102 @@
 			<ul>
 				
 				<li {{page.index}}><a href="index.html">Home</a></li>
+				<li {{page.schedule}}><a href="schedule.html">Schedule</a></li>
 				<li {{page.speakers}}><a href="speakers.html">Speakers</a></li>
-				<li><a href="venue.html">Venue</a></li>
-				<li><a href="pre-register.html">Pre-register</a></li>
-				<li><a href="call-for-papers.html">Call for papers</a></li>
-				<li><a href="sponsors.html">Sponsors</a></li>
+				<li {{page.venue}}><a href="venue.html">Venue</a></li>
+				<li {{page.register}}><a href="pre-register.html">Pre-register</a></li>
+				<!-- <li><a href="call-for-papers.html">Call for papers</a></li> -->
+				<li {{page.sponsors}}><a href="sponsors.html">Sponsors</a></li>
 			</ul>
 		</nav>
 	</div><!-- #nav-container -->
 	
 	<div id="main-container">
-		{{ content }}
+		<div id="main" class="wrapper clearfix {{ page.aside }} ">
+			{{ content }}
+			{% if page.aside == "with-aside" %}
+				<aside>
+				  <article id="aside-register" >
+				    <header>
+				      <h1 class="main-title tickets">Register</h1>
+				    </header>
+				    <section>
+				      <h2 class="subtitle">Full Pass Ticket includes</h2>
+				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				      <p>Sed fringilla gravida risus, nec lacinia tellus accumsan sed.</p>
+				    </section>
+				    <section class="button-container">
+				      <a href="#" class="button" target="_blank">Register</a>
+				    </section>
+				  </article>
+				  <article id="recent-tweets" >
+					<header>
+						<h1 class="aside-title tweets">Recent tweets</h1>
+					</header>
+					<section>
+						<ul>
+							<li>
+								<span class="name">@javierbrea</span>
+								<span class="tweet">Ut condimentum lorem quis erat mollis id luctus eros ultrices. Donec volutpat sodales aliquet.</span>
+								<span class="time">16 hours ago</span>
+							</li>
+							<li>
+								<span class="name">@javierbrea</span>
+								<span class="tweet">Ut condimentum lorem quis erat mollis id luctus eros ultrices. Donec volutpat sodales aliquet.</span>
+								<span class="time">16 hours ago</span>
+							</li>
+							<li>
+								<span class="name">@javierbrea</span>
+								<span class="tweet">Ut condimentum lorem quis erat mollis id luctus eros ultrices. Donec volutpat sodales aliquet.</span>
+								<span class="time">16 hours ago</span>
+							</li>
+						</ul>
+					</section>
+					<section class="links">
+						<p>Follow us: <a href="http://twitter.com/spainjs" target="_blank">@spainjs</a></p>
+						<p>Official hashtag: <a href="http://twitter.com/#!/search/#spainjs" target="_blank">#spainjs</a></p>
+					</section>
+					</article>
+					<article id="share" >
+						<header>
+							<h1 class="aside-title tweets">Share</h1>
+						</header>
+						<section id="share-container">
+
+						</section>
+					</article>
+				</aside>
+			{% endif %}
+			{% unless page.sponsors %}
+			<article class="sponsors-footer" id="sponsors" >
+				<section class="sponsors">
+					<header>
+						<h1>Sponsors</h1>
+					</header>
+					<ul>
+						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
+					</ul>
+				</section>
+				<section class="party">
+					<header>
+						<h1>Party Sponsors</h1>
+					</header>
+					<ul>
+						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
+					</ul>
+				</section>
+				<section class="media">
+					<header>
+						<h1>Media Partners</h1>
+					</header>
+					<ul>
+						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
+					</ul>
+				</section>
+			</article>
+			{% endunless %}
+		</div>
+
 	</div><!-- #main-container -->
 	<div id="footer-container">
 		<footer >
