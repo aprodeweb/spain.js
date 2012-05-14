@@ -328,6 +328,12 @@ h1.location {
 h1.tweets{
 	background:transparent url(../img/icons/twitter.png) left center no-repeat;
 }
+h1.sponsors{
+	background:transparent url(../img/icons/tickets.png) left center no-repeat;
+}
+h1.schedule{
+	background:transparent url(../img/icons/tickets.png) left center no-repeat;
+}
 #main article {
 	margin: 0 5% 0 5%;
 	font-size:96%;
