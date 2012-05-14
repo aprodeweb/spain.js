@@ -667,7 +667,7 @@ margin-bottom:40px;
 	display:inline-block;
 }
 .speakers-detail  div.description {
-	clear:both;
+	/*clear:both;*/
 }
 .speakers-detail span.name {
 	color:#a30006;
