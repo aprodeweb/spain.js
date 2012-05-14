@@ -457,8 +457,14 @@ h1.tweets{
 	max-width:140px;
 }
 
-#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
+#sponsors .sponsors-platinum li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
+	width:40.1%;
+}
+#sponsors .sponsors-gold li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
 	width:30.1%;
+}
+#sponsors .sponsors-silver li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
+	width:21.7%;
 }
 #sponsors .party li,.with-aside  #sponsors.sponsors-footer .party li  {
 	width:21.7%;

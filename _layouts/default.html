@@ -55,18 +55,20 @@
 			{{ content }}
 			{% if page.aside == "with-aside" %}
 				<aside>
-				  <article id="aside-register" >
-				    <header>
-				      <h1 class="main-title tickets">Pre-Register</h1>
-				    </header>
-				    <section>
-					    <h2 class="subtitle">Have priority to buy a ticket</h2>
-					    <p>Subscribe to our mailing list if you want to know about our news and have priority to buy a ticket </p>
-					  </section>
-					  <section class="button-container">
-					    <a href="http://eepurl.com/jZDlX" class="button" target="_blank">Pre-register</a>
-					  </section>
-				  </article>
+				  {% unless page.register %}
+					  <article id="aside-register" >
+					    <header>
+					      <h1 class="main-title tickets">Pre-Register</h1>
+					    </header>
+					    <section>
+						    <h2 class="subtitle">Have priority to buy a ticket</h2>
+						    <p>Subscribe to our mailing list if you want to know about our news and have priority to buy a ticket </p>
+						  </section>
+						  <section class="button-container">
+						    <a href="http://eepurl.com/jZDlX" class="button" target="_blank">Pre-register</a>
+						  </section>
+					  </article>
+					{% endunless %}
 				  <article id="recent-tweets" >
 					<header>
 						<h1 class="aside-title tweets">Recent tweets</h1>
@@ -109,28 +111,55 @@
 			<article class="sponsors-footer" id="sponsors" >
 				<section class="sponsors">
 					<header>
-						<h1>Sponsors</h1>
+						<h1><strong><big>Sponsors</big></strong></h1>
 					</header>
-					<ul>
-						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
-					</ul>
 				</section>
-				<section class="party">
-					<header>
-						<h1>Party Sponsors</h1>
-					</header>
-					<ul>
-						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
-					</ul>
-				</section>
-				<section class="media">
-					<header>
-						<h1>Media Partners</h1>
-					</header>
-					<ul>
-						<li><span><a href="#" title="Sponsor"><img src="img/sponsors/softonic.jpg" alt="Sponsor"/></a></span></li>
-					</ul>
-				</section>
+				<section class="sponsors-platinum">
+			          <header>
+			            <h1>Platinum</h1>
+			          </header>
+			          <ul>
+			            <li><span><a href="http://www.softonic.com" title="Softonic" rel="partner"><img src="./img/partners/softonic.jpg" alt="Softonic"></a></span></li>
+			          </ul>
+			        </section>
+			        <section class="sponsors-gold">
+			          <header>
+			            <h1>Gold</h1>
+			          </header>
+			          <ul>
+			            <li><span><a href="http://www.aspgems.com" title="Aspgems.com" rel="partner"><img src="./img/partners/aspgems.gif" alt="AspGems"></a></span></li>
+			          </ul>
+			        </section>
+			        <section class="sponsors-silver">
+			          <header>
+			            <h1>Silver</h1>
+			          </header>
+			          <ul>
+			            <li><span><a href="http://www.deiser.com" title="Deiser.com" rel="partner"><img src="./img/partners/deiser.png" alt="Deiser"></a></span></li>
+			          </ul>
+			        </section>
+			        <section class="sponsors">
+			          <header>
+			            <h1>Saturday Night Party Sponsors</h1>
+			          </header>
+			          <ul>
+			            <li><span> <a href="http://www.atlassian.com" title="Atlassian" rel="partner"><img src="./img/partners/atlassian.png" alt="Atlassian"></a></span></li>
+			          </ul>
+			        </section>
+			        <section class="media">
+			          <header>
+			            <h1>Media Partners</h1>
+			          </header>
+			          <ul>
+			            <li><span><a href="http://betabeers.com" title="Betabeers | Reunión mensual de desarrolladores web y apps" rel="partner"><img src="./img/partners/betabeers.png" alt="Betabeers"></a></span></li>
+			          <li><span><a href="http://www.becodemyfriend.com/" title="BeCodeMyFriend| Aceleradora Punk de proyectos de Software" rel="partner"><img src="./img/partners/becode.png" alt="Becode My Friend" class="partner"></a></span></li>
+			          <li><span><a href="http://www.wiseri.com/" title="Wiseri.com| Web de empleo" rel="partner"><img src="./img/partners/wiseri_black.png" alt="Wiseri" class="partner"></a></span></li>
+			          <li><span><a href="http://www.programandonet.com/" title="ProgramandoNet| .net User Group" rel="partner"><img src="./img/partners/programandonet.png" alt="Programandonet"  width="250"></a></span></li>
+			          <li><span><a href="http://madridjs.org/" title="MadridJs| JavaScript User Group" rel="partner"><img src="./img/partners/madridjs.jpeg" alt="MadridJS" class="partner"></a></span></li>
+			          <li><span><a href="http://javascriptweekly.com/" title="A free, once–weekly e-mail round-up of JavaScript news and articles." rel="partner"><img src="./img/partners/jsweekly.png" alt="JavaScript Weekly" class="partner"></a></span></li>
+			          <li><span><a href="http://evergreenpm.com/" title="Evergreen, Project Management Services" rel="partner"><img src="./img/partners/evergreen.png" alt="Project Management Services" width="250"></a></span></li>
+			          </ul>
+			        </section>
 			</article>
 			{% endunless %}
 		</div>
