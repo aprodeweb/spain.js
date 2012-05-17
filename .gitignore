@@ -2,3 +2,5 @@ output
 tmp
 _site
 .DS_Store
+.idea
+Gemfile.lock

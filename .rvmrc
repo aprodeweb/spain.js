@@ -1,0 +1,1 @@
+rvm --create use default@spainjs > /dev/null
