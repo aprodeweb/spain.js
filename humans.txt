@@ -11,6 +11,10 @@
   Site: www.farmerdev.com
   Twitter: @ialcazar
 
+  Some tweaks: Enrique Amode
+  Site: eamodeorubio.wordpress.com
+  Twitter: @eamodeorubio
+
 /* THANKS */
   Jorge González - @boton
 
