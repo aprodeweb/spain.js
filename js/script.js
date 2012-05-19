@@ -4,10 +4,10 @@
 
 jQuery(function($){
         $(".tweet").tweet({
-        	avatar_size: 22,
-            count: 10,
-          	query: "from:spainjs",
-          	loading_text: "searching twitter..."
+            count: 3,
+          	query: "#spainjs OR from:@spainjs",
+          	loading_text: "searching twitter...",
+			template: '<span class="name">@{screen_name}</span><span class="tweet">{text}</span><span class="time">{time}</span>'
         });
     });
 
