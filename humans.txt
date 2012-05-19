@@ -7,7 +7,7 @@
   Site: www.javierbrea.com
   Twitter: @javierbrea
 
-  Front End Developer: Israel Alcázar
+  Beginner Front End Developer: Israel Alcázar
   Site: www.farmerdev.com
   Twitter: @ialcazar
 
