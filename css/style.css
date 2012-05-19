@@ -77,6 +77,10 @@ body{
 font:16px/26px Arimo, Arial;
 }
 
+a:link , a:visited , a:hover , a:active {
+	color: #222;
+}
+
 .wrapper{
 	width:90%;
 	margin:0 5%;
@@ -229,6 +233,7 @@ text-align:center;
 	background-repeat:no-repeat,repeat-y,repeat;
 	background-size:100% 15px, 100% 10px,auto auto;
 	background-position: 0 bottom,0 0,0 0;
+	text-shadow: rgba(255, 255, 255, .8) 0px 1px;
 }
 
 /* FOOTER */
@@ -328,11 +333,9 @@ h1.location {
 h1.tweets{
 	background:transparent url(../img/icons/twitter.png) left center no-repeat;
 }
-h1.sponsors{
-	background:transparent url(../img/icons/tickets.png) left center no-repeat;
-}
+
 h1.schedule{
-	background:transparent url(../img/icons/tickets.png) left center no-repeat;
+	background:transparent url(../img/icons/schedule.png) left center no-repeat;
 }
 #main article {
 	margin: 0 5% 0 5%;
@@ -463,15 +466,10 @@ h1.schedule{
 	max-width:140px;
 }
 
-#sponsors .sponsors-platinum li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:45%;
-}
-#sponsors .sponsors-gold li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
+#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
 	width:30.1%;
 }
-#sponsors .sponsors-silver li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:21.7%;
-}
+
 #sponsors .party li,.with-aside  #sponsors.sponsors-footer .party li  {
 	width:21.7%;
 }
@@ -487,6 +485,11 @@ h1.schedule{
 .with-aside #sponsors .media li {
 	width:21.7%;
 }
+
+.sponsorship {
+	font-size: 90%;
+}
+
 #venue .maps-container {
 	padding:10px;
 	background-color:#fff;
@@ -521,8 +524,14 @@ h1.aside-title {
 	padding:18px 0 18px 60px;
 	background-size:auto 90%;
 }
-#share-container {
-	height:20px;
+
+#share-container ul {
+	margin:20px 0 0 0;
+	padding:0;
+}
+#share-container ul li.shareBtn {
+	display:inline-block;
+	max-width:80px;
 }
 #recent-tweets ul {
 	margin:0;
@@ -544,11 +553,24 @@ h1.aside-title {
 	color:#524f43;
 	font-size:80%;
 	margin-bottom:2px;
+	word-wrap: break-word;
+}
+#recent-tweets span.tweet span {
+	display:inline;
+	
+}
+#recent-tweets span.tweet a {
+	color:#524f43;
+	text-decoration:underline;
 }
 #recent-tweets span.time {
 	color:#928b73;
 	font-size:80%;
 	text-align:right;
+}
+#recent-tweets span.time a {
+	text-decoration:none;
+	color:#928b73;
 }
 #recent-tweets .links p {
 	display:block;
@@ -678,9 +700,7 @@ margin-bottom:40px;
 .speakers-detail  span.name,.speakers-detail  span.speciality {
 	display:inline-block;
 }
-.speakers-detail  div.description {
-	/*clear:both;*/
-}
+
 .speakers-detail span.name {
 	color:#a30006;
 	font-weight:bold;
