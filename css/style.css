@@ -459,31 +459,40 @@ h1.schedule{
 #sponsors .sponsors li img {
 	max-width:300px;
 }
-#sponsors .party li img {
-	max-width:220px;
+#sponsors .gold li img {
+	max-width:240px;
+}
+#sponsors .silver li img {
+	max-width:200px;
 }
 #sponsors .media li img {
 	max-width:140px;
 }
 
 #sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:30.1%;
+	width:50.1%;
+}
+#sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
+	width:41.7%;
 }
 
-#sponsors .party li,.with-aside  #sponsors.sponsors-footer .party li  {
+#sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
 	width:21.7%;
 }
 #sponsors .media li,.with-aside  #sponsors.sponsors-footer .media  li  {
 	width:13%;
 }
 .with-aside #sponsors .sponsors li {
-			width:47%;
+	width:47%;
 }
-.with-aside #sponsors .party li {
-	width:30.1%
+.with-aside #sponsors .gold li {
+	width:40.1%
+}
+.with-aside #sponsors .silver li {
+	width:21.1%
 }
 .with-aside #sponsors .media li {
-	width:21.7%;
+	width:13%;
 }
 
 .sponsorship {
@@ -897,9 +906,12 @@ margin-bottom:40px;
 		}
 		
 		#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-			width:47%;
+			width:60.1%;
 		}
-		#sponsors .party li,.with-aside  #sponsors.sponsors-footer .party li  {
+		#sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
+			width:40.7%
+		}
+		#sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
 			width:30.1%
 		}
 		#sponsors .media li,.with-aside  #sponsors.sponsors-footer .media  li {
