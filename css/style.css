@@ -415,7 +415,7 @@ h1.schedule{
 	margin-bottom:20px;
 }
 .speakers li span,#sponsors li span  {
-	display:block;
+	/*display:block;*/
 	text-align:center;
 }
 .speakers li img {
