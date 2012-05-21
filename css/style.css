@@ -470,26 +470,26 @@ h1.schedule{
 }
 
 #sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:50.1%;
+	width:41.1%;
 }
 #sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
-	width:41.7%;
+	width:25.7%;
 }
 
 #sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
-	width:21.7%;
+	width:20.7%;
 }
 #sponsors .media li,.with-aside  #sponsors.sponsors-footer .media  li  {
 	width:13%;
 }
 .with-aside #sponsors .sponsors li {
-	width:50.1%;
+	width:41.1%;
 }
 .with-aside #sponsors .gold li {
-	width:40.1%
+	width:25.7%
 }
 .with-aside #sponsors .silver li {
-	width:21.1%
+	width:20.7%
 }
 .with-aside #sponsors .media li {
 	width:13%;
@@ -906,10 +906,10 @@ margin-bottom:40px;
 		}
 		
 		#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-			width:60.1%;
+			width:41.1%;
 		}
 		#sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
-			width:40.7%
+			width:31.7%
 		}
 		#sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
 			width:30.1%
