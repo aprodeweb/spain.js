@@ -414,8 +414,12 @@ h1.schedule{
 	margin-right:1%;
 	margin-bottom:20px;
 }
-.speakers li span,#sponsors li span  {
-	/*display:block;*/
+.speakers li span{
+	display:block;
+	text-align:center;
+}
+#sponsors li span  {
+	
 	text-align:center;
 }
 .speakers li img {
