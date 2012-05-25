@@ -311,6 +311,56 @@ font-size:90%;
 }
 
 /* CONTENTS */
+
+
+.speakers-detail .bio:before {
+  content: "bio";
+  color: white;
+  font-weight: bold;
+  background-color: #0069D6;
+  display: inline;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  padding: 0.3em;
+  margin: 0.2em;
+  text-transform: uppercase;
+  float: left;
+}
+
+.speakers-detail .bio:first-letter {
+  font-size: 1em;
+}
+
+.difficulty {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.65em;
+  padding: 0.3em;
+  margin: 0.2em;
+  float:left;
+}
+.intermediate {
+  background-color: #f89406;
+}
+
+.beginner {
+  background-color: #46a546;
+}
+
+.advanced {
+  background-color: #c43c35;
+}
+
 h1.main-title {
 	color:#a30006;
 	font:200% Pacifico;
@@ -681,6 +731,56 @@ a.button.moreinfo:active {
 #speakers section.intro {
 margin-bottom:40px;
 }
+
+.speakers-detail .talk {
+  margin: 0.75em 0 2em 0;
+  clear: both;
+}
+
+.speakers-detail .talk > .title {
+  color:#752000;
+  font-weight:bold;
+  text-transform: capitalize;
+}
+
+.speakers-detail .talk > .description, .speakers-detail .talk p {
+  display: inline-block;
+}
+.speakers-detail .talk .description:before {
+  content: "talk";
+  color: white;
+  font-weight: bold;
+  background-color: gray;
+  display: inline;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 0.65em;
+  padding: 0.3em;
+  margin: 0.2em;
+  text-transform: uppercase;
+  float: left;
+}
+.speakers-detail .talk.keynote .description:before {
+  content: "keynote";
+}
+
+.speakers-detail .talk.workshop .description:before {
+  content: "workshop";
+}
+
+.speakers-detail .workshop .prerrequisites li {
+  margin: 0;
+}
+.speakers-detail .workshop .prerrequisites li:before {
+  content: "\00BB \0020";
+  font-weight: bold;
+  margin-left: 2em;
+  color: #752000;
+}
+
 .speakers-detail ul {
 	padding:0px;
 	margin:0px;
@@ -717,6 +817,7 @@ margin-bottom:40px;
 .speakers-detail span.name {
 	color:#a30006;
 	font-weight:bold;
+  font-size:1.5em;
 }
 .speakers-detail span.url {
 	font-weight:bold;

@@ -11,7 +11,7 @@
   Site: www.farmerdev.com
   Twitter: @ialcazar
 
-  Some tweaks: Enrique Amode
+  Front End Developer: Enrique Amodeo
   Site: eamodeorubio.wordpress.com
   Twitter: @eamodeorubio
 
