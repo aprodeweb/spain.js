@@ -54,7 +54,7 @@
 			<ul>
 				
 				<li {{page.index}}><a href="index.html">Home</a></li>
-				<li {{page.register}}><a href="pre-register.html">Pre-register</a></li>
+				<!-- <li {{page.register}}><a href="pre-register.html">Pre-register</a></li> -->
 				<li {{page.schedule}}><a href="schedule.html">Schedule</a></li>
 				<li {{page.speakers}}><a href="speakers.html">Speakers</a></li>
 				<li {{page.venue}}><a href="venue.html">Venue</a></li>
@@ -69,7 +69,8 @@
 			{{ content }}
 			{% if page.aside == "with-aside" %}
 				<aside>
-				  {% unless page.register %}
+					<!--
+				    {% unless page.register %}
 					  <article id="aside-register" >
 					    <header>
 					      <h1 class="aside-title tickets">Pre-Register</h1>
@@ -83,6 +84,7 @@
 						  </section>
 					  </article>
 					{% endunless %}
+					-->
 				  <article id="recent-tweets" >
 					<header>
 						<h1 class="aside-title tweets">Recent tweets</h1>
