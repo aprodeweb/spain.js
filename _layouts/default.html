@@ -55,6 +55,7 @@
 				
 				<li {{page.index}}><a href="index.html">Home</a></li>
 				<!-- <li {{page.register}}><a href="pre-register.html">Pre-register</a></li> -->
+				<li {{page.tickets}}><a href="tickets.html">Tickets</a></li>
 				<li {{page.schedule}}><a href="schedule.html">Schedule</a></li>
 				<li {{page.speakers}}><a href="speakers.html">Speakers</a></li>
 				<li {{page.venue}}><a href="venue.html">Venue</a></li>
@@ -69,22 +70,11 @@
 			{{ content }}
 			{% if page.aside == "with-aside" %}
 				<aside>
-					<!--
-				    {% unless page.register %}
-					  <article id="aside-register" >
-					    <header>
-					      <h1 class="aside-title tickets">Pre-Register</h1>
-					    </header>
-					    <section>
-						    <h2 class="subtitle">Have priority to buy a ticket</h2>
-						    <p>Subscribe to our mailing list if you want to know about our news and have priority to buy a ticket </p>
-						  </section>
-						  <section class="button-container">
-						    <a href="http://eepurl.com/jZDlX" class="button" target="_blank">Pre-register</a>
-						  </section>
-					  </article>
+					
+				    {% unless page.tickets %}
+					  {% include tickets.phtml %}
 					{% endunless %}
-					-->
+					
 				  <article id="recent-tweets" >
 					<header>
 						<h1 class="aside-title tweets">Recent tweets</h1>
