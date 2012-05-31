@@ -1,0 +1,29 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Designer: Javier Brea
+  Front End Developer: Javier Brea
+  Site: www.javierbrea.com
+  Twitter: @javierbrea
+
+  Beginner Front End Developer: Israel Alcázar
+  Site: www.farmerdev.com
+  Twitter: @ialcazar
+
+  Front End Developer: Enrique Amodeo
+  Site: eamodeorubio.wordpress.com
+  Twitter: @eamodeorubio
+
+/* THANKS */
+  Jorge González - @boton
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, respond.js, jQuery, Google Web Fonts API
+  WebFonts: Pacifico(by Vernon Adams), Arimo(by Steve Matteson)
+  Software: Notepad++, Adobe Photoshop CS5, Adobe Illustrator CS5, Sublime Text 2
+  Thanks to: html5boilerplate.com, initializr.com, icondock.com/free/mono-social-icons
+  Symbols used in the section icons are from thenounproject.com
+
+  
