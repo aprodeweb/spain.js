@@ -464,14 +464,11 @@ h1.schedule{
 	margin-right:1%;
 	margin-bottom:20px;
 }
-.speakers li span{
+.speakers li span, #sponsors li span{
 	display:block;
 	text-align:center;
 }
-#sponsors li span  {
-	
-	text-align:center;
-}
+
 .speakers li img {
 	background-color:#fff;
 	padding:4%;
@@ -524,18 +521,20 @@ h1.schedule{
 }
 
 #sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:41.1%;
+	width:31.1%;
 }
 #sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
-	width:25.7%;
+	width: 22.7%;
 }
 
 #sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
-	width:20.7%;
+	width: 17.7%;
 }
 #sponsors .media li,.with-aside  #sponsors.sponsors-footer .media  li  {
 	width:13%;
 }
+
+
 .with-aside #sponsors .sponsors li {
 	width:41.1%;
 }
@@ -548,6 +547,21 @@ h1.schedule{
 .with-aside #sponsors .media li {
 	width:13%;
 }
+
+#sponsors .sponsors .party span {
+	position: relative;
+}
+
+#sponsors .sponsors .party .ribbon {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	padding: 0;
+	width: auto;
+	background: none;
+}
+
+
 
 .sponsorship {
 	font-size: 90%;
@@ -916,6 +930,7 @@ margin-bottom:40px;
 		#recent-tweets span.time {
 			text-align:left;
 		}
+		#sponsors .sponsors .party .ribbon {display: none;}
 	}
 	
 	 /* Landscape phones and down*/
@@ -1011,7 +1026,7 @@ margin-bottom:40px;
 		}
 		
 		#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-			width:41.1%;
+			width:47%;
 		}
 		#sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
 			width:31.7%
@@ -1025,6 +1040,7 @@ margin-bottom:40px;
 		#venue ul.photos li {
 			width:98%;
 		}
+		#sponsors .sponsors .party .ribbon {background-color: red;}
 	}
      
     /* Portrait tablet to landscape and desktop */
