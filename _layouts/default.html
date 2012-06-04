@@ -67,11 +67,13 @@
 
   <div id="main-container">
     <div id="main" class="wrapper clearfix {{ page.aside }} ">
+      
       {{ content }}
       {% if page.aside == "with-aside" %}
         <aside>
-
-            {% unless page.tickets %}
+          
+          {% unless page.tickets %}
+            {% assign ticket-style = 'aside-title tickets' %}
             {% include tickets.phtml %}
           {% endunless %}
 
