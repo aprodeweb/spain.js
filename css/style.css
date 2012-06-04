@@ -383,9 +383,11 @@ h1.location {
 h1.tweets{
 	background:transparent url(../img/icons/twitter.png) left center no-repeat;
 }
-
 h1.schedule{
 	background:transparent url(../img/icons/schedule.png) left center no-repeat;
+}
+h1.jobs{
+	background:transparent url(../img/icons/jobs.png) left center no-repeat;
 }
 #main article {
 	margin: 0 5% 0 5%;
@@ -464,14 +466,11 @@ h1.schedule{
 	margin-right:1%;
 	margin-bottom:20px;
 }
-.speakers li span{
+.speakers li span, #sponsors li span{
 	display:block;
 	text-align:center;
 }
-#sponsors li span  {
-	
-	text-align:center;
-}
+
 .speakers li img {
 	background-color:#fff;
 	padding:4%;
@@ -524,18 +523,20 @@ h1.schedule{
 }
 
 #sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-	width:41.1%;
+	width:31.1%;
 }
 #sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
-	width:25.7%;
+	width: 22.7%;
 }
 
 #sponsors .silver li,.with-aside  #sponsors.sponsors-footer .silver li  {
-	width:20.7%;
+	width: 17.7%;
 }
 #sponsors .media li,.with-aside  #sponsors.sponsors-footer .media  li  {
 	width:13%;
 }
+
+
 .with-aside #sponsors .sponsors li {
 	width:41.1%;
 }
@@ -548,6 +549,21 @@ h1.schedule{
 .with-aside #sponsors .media li {
 	width:13%;
 }
+
+#sponsors .sponsors .party span {
+	position: relative;
+}
+
+#sponsors .sponsors .party .ribbon {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	padding: 0;
+	width: auto;
+	background: none;
+}
+
+
 
 .sponsorship {
 	font-size: 90%;
@@ -814,7 +830,8 @@ margin-bottom:40px;
 	display:inline-block;
 }
 
-.speakers-detail span.name {
+.speakers-detail span.name,
+.jobs h2 {
 	color:#a30006;
 	font-weight:bold;
   font-size:1.5em;
@@ -834,6 +851,46 @@ margin-bottom:40px;
 .speakers-detail span.twitter {
 	margin-bottom:10px;
 }
+
+
+.jobs {
+	padding: 0;
+	list-style: none;
+}
+	.jobs > li {
+		position: relative;
+		border-bottom: 1px solid #d5c68c;
+		box-shadow: 0 1px 0 white;
+		padding: 0 90px 1em 0;
+	}
+	.jobs li:last-child {
+		border-bottom: 0;
+		box-shadow: none;
+	}
+
+		.jobs .more {
+			display: none;
+		}
+
+		.jobs .readmore {
+			position: absolute;
+			overflow: hidden;
+			right: 0;
+			top: 0;
+			width: 80px;
+			height: 100%;
+			background: url(../img/icons/readmore.png) no-repeat 50% 30px;
+			text-align: center;
+			text-indent: -999em;
+		}
+
+		.jobs .less .more {
+			display: block;
+		}
+		
+		.jobs .less .readmore {
+			background-image: url(../img/icons/readless.png);
+		}
 
 /* =============================================================================
    Media Queries
@@ -916,6 +973,7 @@ margin-bottom:40px;
 		#recent-tweets span.time {
 			text-align:left;
 		}
+		#sponsors .sponsors .party .ribbon {display: none;}
 	}
 	
 	 /* Landscape phones and down*/
@@ -1011,7 +1069,7 @@ margin-bottom:40px;
 		}
 		
 		#sponsors .sponsors li,.with-aside  #sponsors.sponsors-footer .sponsors li  {
-			width:41.1%;
+			width:47%;
 		}
 		#sponsors .gold li,.with-aside  #sponsors.sponsors-footer .gold li  {
 			width:31.7%
@@ -1025,6 +1083,7 @@ margin-bottom:40px;
 		#venue ul.photos li {
 			width:98%;
 		}
+		#sponsors .sponsors .party .ribbon {background-color: red;}
 	}
      
     /* Portrait tablet to landscape and desktop */
