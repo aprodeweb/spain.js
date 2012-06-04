@@ -25,5 +25,6 @@
   Software: Notepad++, Adobe Photoshop CS5, Adobe Illustrator CS5, Sublime Text 2
   Thanks to: html5boilerplate.com, initializr.com, icondock.com/free/mono-social-icons
   Symbols used in the section icons are from thenounproject.com
+  The party ribbon: premiumpixels.com
 
   
