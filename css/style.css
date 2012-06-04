@@ -312,7 +312,7 @@ font-size:90%;
 
 /* CONTENTS */
 
-
+/*
 .speakers-detail .bio:before {
   content: "bio";
   color: white;
@@ -334,7 +334,7 @@ font-size:90%;
 .speakers-detail .bio:first-letter {
   font-size: 1em;
 }
-
+*/
 .difficulty {
   color: white;
   font-weight: bold;
