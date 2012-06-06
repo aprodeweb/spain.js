@@ -67,11 +67,11 @@
 
   <div id="main-container">
     <div id="main" class="wrapper clearfix {{ page.aside }} ">
-      
+
       {{ content }}
       {% if page.aside == "with-aside" %}
         <aside>
-          
+
           {% unless page.tickets %}
             {% assign ticket-style = 'aside-title tickets' %}
             {% include tickets.phtml %}
@@ -139,6 +139,7 @@
                --><li><span><a href="https://bluevia.com/" title="https://bluevia.com/" rel="partner"><img src="./img/partners/bluevia.png" alt="BlueVia"></a></span></li><!--
                --><li><span><a href="http://ludei.com/" title="Ludei" rel="partner"><img src="./img/partners/ludei.png" alt="Mobilizing HTML5 Games"></a></span></li><!--
                --><li><span><a href="http://www.paradigmatecnologico.com/" title="http://www.paradigmatecnologico.com/" rel="partner"><img src="./img/partners/paradigma.png" alt="Paradigma Tecnológico"></a></span></li><!--
+              --><li><span><a href="http://www.groupon.com/" title="http://www.groupon.com/" rel="partner"><img src="./img/partners/groupon.png" alt="Groupon"></a></span></li><!--
               --></ul>
               </section>
               <section class="silver">
@@ -163,35 +164,35 @@
                 <li><span><a href="http://javascriptweekly.com/" title="A free, once–weekly e-mail round-up of JavaScript news and articles." rel="partner"><img src="./img/partners/jsweekly.gif" alt="JavaScript Weekly" class="partner"></a></span></li>
                 <li><span><a href="http://evergreenpm.com/" title="Evergreen, Project Management Services" rel="partner"><img src="./img/partners/evergreen.gif" alt="Project Management Services" width="250"></a></span></li>
                 <li><span><a href="http://kubide.es/" title="Web development" rel="partner"><img src="./img/partners/Kubide.png" alt="Web development"></a></span></li>
-			          
-                <li><span><a href="http://html5spain.wordpress.com/" title="HTML5 Spain" rel="partner"><img src="./img/partners/html5spain.png" alt="HTML5 Spain"></a></span></li>
-			          </ul>
-			        </section>
-			        <section class="sponsorship">
-		        		<p>Would you like your company to appear <strong>RIGHT HERE?</strong> <span class="mail"><a href="mailto:hello@spainjs.org">Send us an email</a></span> for more information on our exclusive <a href="./assets/2012.SponsorshipPamphlet.v1.2.pdf">sponsorship bundles (PDF).</a></p>
-		      		</section>
-			</article>
-			{% endunless %}
-			
-		</div>
 
-	</div><!-- #main-container -->
-	<div id="footer-container">
-		<footer >
-			<section id="about">
-					<h3>About</h3>
-					<p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
-					<p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.<a href="humans.txt"><img src="/img/humanstxt.png"/></a></p>
-			</section>
-			<section id="share">
-				<h3>Find Us</h3>
-				<ul>
-					<li class="twitter"><a href="http://twitter.com/spainjs" target="_blank">Twitter</a></li>
-					<li class="email"><a href="mailto:hello@spainjs.org">Email</a></li>
-				</ul>
-			</section>
-		</footer>
-	</div>
+                <li><span><a href="http://html5spain.wordpress.com/" title="HTML5 Spain" rel="partner"><img src="./img/partners/html5spain.png" alt="HTML5 Spain"></a></span></li>
+                </ul>
+              </section>
+              <section class="sponsorship">
+                <p>Would you like your company to appear <strong>RIGHT HERE?</strong> <span class="mail"><a href="mailto:hello@spainjs.org">Send us an email</a></span> for more information on our exclusive <a href="./assets/2012.SponsorshipPamphlet.v1.2.pdf">sponsorship bundles (PDF).</a></p>
+              </section>
+      </article>
+      {% endunless %}
+
+    </div>
+
+  </div><!-- #main-container -->
+  <div id="footer-container">
+    <footer >
+      <section id="about">
+          <h3>About</h3>
+          <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
+          <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.<a href="humans.txt"><img src="/img/humanstxt.png"/></a></p>
+      </section>
+      <section id="share">
+        <h3>Find Us</h3>
+        <ul>
+          <li class="twitter"><a href="http://twitter.com/spainjs" target="_blank">Twitter</a></li>
+          <li class="email"><a href="mailto:hello@spainjs.org">Email</a></li>
+        </ul>
+      </section>
+    </footer>
+  </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 <script src="js/libs/jquery.tweet.js"></script>
