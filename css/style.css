@@ -1196,6 +1196,37 @@ a.button.moreinfo:active {
   background-image: url(../img/icons/readless.png);
 }
 
+
+#accomodations ul {
+  list-style:none;
+  padding:0;
+}
+
+.accomodation {
+  border-bottom: 1px solid #d5c68c;
+  box-shadow: 0 1px 0 white;
+  padding: 0 90px 1em 0;
+}
+
+.accomodation h2 {
+  color: #A30006;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.accomodations h3 {
+  margin-bottom:.5em;
+}
+
+.accomodations .conditions {
+   margin-top:.5em;
+}
+
+#accomodations ul li:last-child {
+  border-bottom: 0;
+  box-shadow: none;
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -1427,22 +1458,6 @@ a.button.moreinfo:active {
     background-color: red;
   }
 
-  #accomodations ul {
-    list-style:none;
-    padding:0;
-  }
-
-  .accomodation {
-    border-bottom: 1px solid #d5c68c;
-    box-shadow: 0 1px 0 white;
-    padding: 0 90px 1em 0;
-  }
-
-  .accomodation h2 {
-    color: #A30006;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
 }
 
 /* Portrait tablet to landscape and desktop */
