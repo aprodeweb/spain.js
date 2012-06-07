@@ -1426,6 +1426,23 @@ a.button.moreinfo:active {
   #sponsors .sponsors .party .ribbon {
     background-color: red;
   }
+
+  #accomodations ul {
+    list-style:none;
+    padding:0;
+  }
+
+  .accomodation {
+    border-bottom: 1px solid #d5c68c;
+    box-shadow: 0 1px 0 white;
+    padding: 0 90px 1em 0;
+  }
+
+  .accomodation h2 {
+    color: #A30006;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
