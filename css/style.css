@@ -271,6 +271,24 @@ td {
   padding:10px;
 }
 
+/* schedule specific */
+table.schedule td{
+  text-align: center;
+  border-bottom: 1px dotted gray;
+}
+table.schedule td a{
+  text-decoration: none;
+}
+table.schedule td a:hover{
+  text-decoration: underline;
+}
+table.schedule td.break{
+  color: white;
+  background-color: lightgray;
+}
+
+/* end schedule*/
+
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
