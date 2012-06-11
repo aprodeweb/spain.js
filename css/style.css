@@ -272,7 +272,10 @@ td {
 }
 
 /* schedule specific */
-table.schedule td{
+table.schedule{
+  width: 100%;
+}
+table.schedule td, table.schedule td.break{
   text-align: center;
   border-bottom: 1px dotted gray;
 }
