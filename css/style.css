@@ -275,13 +275,21 @@ td {
 table.schedule{
   width: 100%;
 }
+table.schedule caption{ 
+  font-variant: italic;
+  font-size: x-small;
+}
+table.schedule th.time_column{ width: 4% }
+table.schedule th.normal_column{ width: 32% }
 table.schedule th{
+  vertical-align: top;
   font-weight:  normal;
   text-shadow: 0px -1px black;  
+  font-size: small;
 }
 table.schedule td, table.schedule td.break{
   text-align: center;
-  border-bottom: 1px dashed gray;
+  border-bottom: 1px dotted gray;
   font-size: small;
 }
 table.schedule td a{
