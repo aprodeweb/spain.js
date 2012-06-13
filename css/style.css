@@ -1301,6 +1301,10 @@ a.button.moreinfo:active {
    margin-top:.5em;
 }
 
+#main article .accomodations p.discount-code {
+  margin-top: 1em;
+}
+
 #accomodations ul li:last-child {
   border-bottom: 0;
   box-shadow: none;
