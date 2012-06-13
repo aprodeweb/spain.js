@@ -311,10 +311,10 @@ span.speaker{
 			border: 0;
 		}
 		.schedule th.time_column {
-			width: 10%;
+			width: 7%;
 		}
 		.schedule th.normal_column {
-			width: 30%;
+			width: 28.6%;
 		}
 		.schedule td {
 			vertical-align: middle;
