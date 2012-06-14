@@ -260,87 +260,114 @@ table {
   border-spacing: 0;
   border: 1px solid black;
 }
-th
-{
-background-color: #A30006;
-color:white;
+
+th {
+  background-color: #A30006;
+  color: white;
 }
 
 td {
   vertical-align: top;
-  padding:10px;
+  padding: 10px;
 }
 
 /* schedule specific */
 
-.schedule table{
+.schedule table {
   width: 100%;
 }
 
-.schedule table th{
+.schedule table th {
   vertical-align: top;
-  font-weight:  normal;
-  text-shadow: 0px -1px black;  
+  font-weight: normal;
+  text-shadow: 0px -1px black;
   font-size: small;
 }
-.schedule table td.break{
+
+.schedule table td.break {
   text-align: center;
   font-size: small;
 }
-.schedule table td a{
+
+.schedule table td a {
   text-decoration: none;
 }
-.schedule table td a:hover{
+
+.schedule table td a:hover {
   text-decoration: underline;
 }
+
 .schedule table td.break {
   color: #A30006;
   background-color: lightgray;
 }
-span.speaker{
+
+span.speaker {
   font-variant: small-caps;
 }
-   /* responsive schedule: */
-		.schedule { margin-top: 35px}
-			.schedule h2 { padding-bottom: 25px; }
-		.schedule td {
-			border: 1px solid #777;
-			border-radius: 4px;
-		}
-		.schedule td.empty_cell, .schedule td.break {
-			border: 0;
-		}
-		.schedule th.time_column {
-			width: 7%;
-		}
-		.schedule th.normal_column {
-			width: 28.6%;
-		}
-		.schedule td {
-			vertical-align: middle;
-			text-align: center;
-			padding: 6px;
-			border-collapse:separate;
-			border-spacing: 12px;
-		}
-		section.schedule p {
-			margin: 24px 0;
-		}
-		@media screen {
-			.schedule caption {
-				display: none; 
-			}
-		}
-		.mobile {
-			display: none;
-		}
-		@media only screen and ( max-width: 479px) and (min-width: 320px) {
-			.schedule { display: none; } 
-			section.mobile { display: block; }
-			.mobile p {
-				text-align: center;
-			}
-		}
+
+/* responsive schedule: */
+.schedule {
+  margin-top: 35px
+}
+
+.schedule h2 {
+  padding-bottom: 25px;
+}
+
+.schedule td {
+  border: 1px solid #777;
+  border-radius: 4px;
+}
+
+.schedule td.empty_cell, .schedule td.break {
+  border: 0;
+}
+
+.schedule th.time_column {
+  width: 7%;
+}
+
+.schedule th.normal_column {
+  width: 28.6%;
+}
+
+.schedule td {
+  vertical-align: middle;
+  text-align: center;
+  padding: 6px;
+  border-collapse: separate;
+  border-spacing: 12px;
+}
+
+section.schedule p {
+  margin: 24px 0;
+}
+
+@media screen {
+  .schedule caption {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and ( max-width: 479px) and (min-width: 320px) {
+  .schedule {
+    display: none;
+  }
+
+  section.mobile {
+    display: block;
+  }
+
+  .mobile p {
+    text-align: center;
+  }
+}
+
 /* end schedule*/
 
 .chromeframe {
@@ -701,7 +728,7 @@ h1.tickets {
   background: transparent url(../img/icons/tickets.png) left center no-repeat;
 }
 
-h1.location {
+h1.location, h1.maps {
   background: transparent url(../img/icons/location.png) left center no-repeat;
 }
 
@@ -1275,10 +1302,9 @@ a.button.moreinfo:active {
   background-image: url(../img/icons/readless.png);
 }
 
-
 #accomodations ul {
-  list-style:none;
-  padding:0;
+  list-style: none;
+  padding: 0;
 }
 
 .accomodation {
@@ -1294,11 +1320,11 @@ a.button.moreinfo:active {
 }
 
 .accomodations h3 {
-  margin-bottom:.5em;
+  margin-bottom: .5em;
 }
 
 .accomodations .conditions {
-   margin-top:.5em;
+  margin-top: .5em;
 }
 
 #main article .accomodations p.discount-code {
@@ -1540,7 +1566,26 @@ a.button.moreinfo:active {
   #sponsors .sponsors .party .ribbon {
     background-color: red;
   }
+}
 
+#maps iframe {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.no-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .no-mobile {
+    display: block;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
