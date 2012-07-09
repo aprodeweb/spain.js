@@ -1148,11 +1148,25 @@ a.button.moreinfo:active {
   margin: 0.75em 0 2em 0;
   clear: both;
 }
-
 .speakers-detail .talk > .title {
   color: #752000;
   font-weight: bold;
   text-transform: capitalize;
+  text-decoration: none;
+}
+.speakers-detail .talk > .title a {
+  color: #752000;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.speakers-detail .talk > .title a:hover {
+  color: #752000;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: underline;
+
 }
 
 .speakers-detail .talk > .description, .speakers-detail .talk p {
