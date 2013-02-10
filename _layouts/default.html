@@ -1,142 +1,103 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-  <title>Spain.js - A Summer JavaScript Conference in Spain</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}Spain.js - A Summer JavaScript Conference in Spain{% endif %}</title>
   <meta name="description" content="A Summer JavaScript Conference in Madrid, Spain" />
-  <meta name="author" content="Spanish Association for Promoting Web Development"/>
+  <meta name="author" content="Spanish Association for Promoting Web Development" />
   <meta name="ROBOTS" content="ALL" />
 
   <meta name="geo.country" content="ES" />
   <meta name="dc.language" content="en" />
   <meta name="geo.placename" content="Madrid" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Open Graph protocol -->
-    <meta property="og:image" content="http://www.spainjs.org/img/header_spain.png" />
-    <meta property="og:title" content="A Summer JavaScript Conference in Madrid, Spain" />
-    <meta property="og:type" content="conference" />
-    <meta property="og:url" content="http://www.spainjs.org" />
-    <meta property="og:site_name" content="Spain JS" />
-    <!-- /Open Graph protocol -->
-    <!-- Google Plus1 -->
-    <html itemscope itemtype="http://schema.org/Article">
-    <meta itemprop="name" content="Spain JS">
-    <meta itemprop="description" content="A Summer JavaScript Conference in Madrid, Spain">
-    <meta itemprop="image" content="http://www.spainjs.org/img/header_spain.png">
-    <!-- /Google Plus1 -->
+  <meta property="og:image" content="http://www.spainjs.org/img/header_spain.png" />
+  <meta property="og:title" content="A Summer JavaScript Conference in Madrid, Spain" />
+  <meta property="og:type" content="conference" />
+  <meta property="og:url" content="http://www.spainjs.org" />
+  <meta property="og:site_name" content="Spain JS" />
+  <!-- /Open Graph protocol -->
+  <!-- Google Plus1 -->
+  <html itemscope itemtype="http://schema.org/Article">
+  <meta itemprop="name" content="Spain JS">
+  <meta itemprop="description" content="A Summer JavaScript Conference in Madrid, Spain">
+  <meta itemprop="image" content="http://www.spainjs.org/img/header_spain.png">
+  <!-- /Google Plus1 -->
+  <meta name="viewport" content="width=device-width">
 
-  <link href="http://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css"/>
-  <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" type="image/png" href="img/icons/favicon.png">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory 
+  http://drublic.de/blog/html5-boilerplate-favicons-psd-template/
+  -->
 
-  <script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700|Sansita+One">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
 </head>
-<body><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <div id="header-container">
-    <header class="wrapper clearfix">
-      <h1 id="title">Spain js</h1>
-      <div class="subtitles">
-        <h2>A summer javascript conference in Spain</h2>
-        <h3>July 4-6, 2013 - Universidad Pontificia Salamanca (Campus Madrid) Madrid</h3>
-      </div>
-    </header>
-  </div><!-- #header-container -->
+<body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
 
-  <div id="nav-container">
-    <nav class="wrapper clearfix">
-      <ul>
-
-        <li {{page.index}}><a href="index.html">Home</a></li>
-        <li {{page.lastYear}}><a href="http://2012.spainjs.org" target="_blank">SpainJs 2012</a></li>
-      </ul>
-    </nav>
-  </div><!-- #nav-container -->
-
-  <div id="main-container">
-    <div id="main" class="wrapper clearfix {{ page.aside }} ">
-
-      {{ content }}
-      {% if page.aside == "with-aside" %}
-        <aside>
-
-          {% unless page.tickets %}
-            {% assign ticket-style = 'aside-title tickets' %}
-            {% include tickets.phtml %}
-          {% endunless %}
-
-          <article id="recent-tweets" >
-          <header>
-            <h1 class="aside-title tweets">Recent tweets</h1>
-          </header>
-          <section class="tweet">
-
-          </section>
-          <section class="links">
-            <p>Follow us: <a href="http://twitter.com/spainjs" target="_blank">@spainjs</a></p>
-            <p>Official hashtag: <a href="http://twitter.com/#!/search/#spainjs" target="_blank">#spainjs</a></p>
-          </section>
-          </article>
-          <article id="shareButtons" >
-            <header>
-              <h1 class="aside-title tweets">Share</h1>
-            </header>
-            <section id="share-container">
-            <ul>
-              <li class="shareBtn"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              </li>
-              <li class="shareBtn">
-                <iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&amp;href=http://www.spainjs.org&amp;send=false&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>
-              </li>
-              <li class="shareBtn"><g:plusone size="medium"></g:plusone>
-                <script type="text/javascript">
-                window.___gcfg = {lang: 'en'};
-                (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                })();
-                </script>
-              </li>
-            </ul>
-            </section>
-          </article>
-        </aside>
+  <div class="wrap">
+    <header>
+        <h1 class="logo">
+          <a href="./" rel="home">Spain JS</a>
+        </h1>
+        <div class="subtitles">
+          <h2>A summer <span class="js">javascript</span> <span class="conference">conference</span></h2>
+          <ul class="social">
+            <li class="twitter"><a href="http://twitter.com/spainjs">Twitter</a></li>
+            <li class="mail"><a href="mailto:hello@spainjs.org">Email</a></li>
+          </ul>
+          <h3>July 4-6, 2013 <small>Madrid</small></h3>
+        </div>
+      </header>
+      {% if page.showreel %}
+        {% include showreel1.phtml %}
       {% endif %}
-      <article class="sponsors-footer" id="sponsors" >
-              <section class="sponsorship">
-                <p>Would you like your company to appear <strong>RIGHT HERE?</strong> <span class="mail"><a href="mailto:hello@spainjs.org">Send us an email</a></span> for more information on our exclusive <a href="./assets/2013_Pamphlet.pdf"  target="_blank">sponsorship bundles (PDF).</a></p>
-              </section>
-      </article>
-
+  </div>  
+  <nav class="menu">
+    <ul class="wrap">
+      <li {{page.index}}><a href="index.html">Speakers</a></li>
+      <li {{page.venue}}><a href="venue.html">Venue</a></li>
+      <li {{page.schedule}}><a href="" class="commingsoon">Schedule</a></li>
+      <li {{page.ticktes}}><a href="" class="commingsoon">Ticktes</a></li>
+      <li {{page.sponsors}}><a href="sponsors.html">Sponsors</a></li>
+      <li {{page.about}}><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  
+  
+  <section id="main">
+    {{ content }}
+  </section>
+  
+  {% if page.sponsors %}
+    {% include sponsors.phtml %}
+  {% endif %}
+  
+  <footer>
+    <div class="wrap clearfix">
+      <section class="about">
+        <h1>About</h1>
+        <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
+        <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.</p>
+      </section>
+      <aside class="networking">
+        <h1>Networking</h1>
+        <div class="wrap"></div>
+      </aside>
+      <div class="credits">
+        <a href="humans.txt" class="humanstxt"><img src="img/humanstxt.png"/></a>
+        <a href="" class="github">hosted by <span>github</span></a>
+      </div>
     </div>
+  </footer>
 
-  </div><!-- #main-container -->
-  <div id="footer-container">
-    <footer >
-      <section id="about">
-          <h3>About</h3>
-          <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
-          <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.<a href="humans.txt"><img src="/img/humanstxt.png"/></a></p>
-      </section>
-      <section id="share">
-        <h3>Find Us</h3>
-        <ul>
-          <li class="twitter"><a href="http://twitter.com/spainjs" target="_blank">Twitter</a></li>
-          <li class="email"><a href="mailto:hello@spainjs.org">Email</a></li>
-        </ul>
-      </section>
-    </footer>
-  </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-<script src="js/libs/jquery.tweet.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>
