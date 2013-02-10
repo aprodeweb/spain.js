@@ -495,7 +495,8 @@ body:after {
   clear: both;
 }
 html {
-  background: url(../img/subtle_grunge.png) 0 0 repeat;
+  /*background: url(../img/subtle_grunge.png) 0 0 repeat;*/
+
   font-size: 62.5%;
 }
 body {
@@ -527,27 +528,31 @@ header .logo {
   position: absolute;
   top: -1px;
   margin: 0;
+  width: 35%;
 }
 header .logo a {
   display: block;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: 240px;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
   background: url(../img/logo.png) 0 0 no-repeat;
+  background-size: 100% auto;
 }
 header .subtitles {
   text-align: right;
 }
 header h2 {
   margin-top: 26px;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 20px;
+  font-size: 2rem;
 }
 header h3 {
-  font-size: 60px;
-  font-size: 6rem;
+  font-size: 58px;
+  font-size: 5.8rem;
+  line-height: 1.1;
   color: #fff;
   margin-top: 20px;
 }
@@ -568,6 +573,7 @@ header h3 {
 }
 header h2 {
   color: #5f7592;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
 }
 header .js {
   color: #fff;
@@ -592,12 +598,16 @@ header .conference {
   height: 32px;
   background: url(../img/find_email.png) 0 0 no-repeat;
 }
+.social .lanyrd a {
+  background: url(../img/find_lanyrd.png) 0 0 no-repeat;
+}
 .social .twitter a {
   background: url(../img/find_twitter.png) 0 0 no-repeat;
 }
 .showreel {
   *zoom: 1;
   position: relative;
+  margin-top: 80px;
   margin-bottom: 35px;
   color: #fbfbf8;
 }
@@ -623,6 +633,10 @@ header .conference {
   width: 39.58333333333333%;
   margin: 0 1.0416666666666665%;
 }
+.showreel h1,
+.showreel h2 {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
 .showreel h1 {
   font-size: 24px;
   font-size: 2.4rem;
@@ -630,18 +644,26 @@ header .conference {
   line-height: 1.21;
   margin-bottom: 50px;
 }
+.showreel h1 span {
+  color: #7fb1f6;
+}
 .showreel h2 {
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 29px;
+  font-size: 2.9rem;
   position: absolute;
   top: 270px;
   font-family: 'Sansita one', Georgia, serif;
   font-weight: normal;
   text-align: right;
-  line-height: 1.21;
+  line-height: 1;
+  margin-top: 0.3em;
+}
+.showreel h2 span {
+  display: block;
 }
 .showreel .photos {
   text-align: right;
+  margin-bottom: 20px;
 }
 .showreel .photos img {
   width: 100%;
@@ -651,7 +673,6 @@ header .conference {
   float: left;
   width: 56.25%;
   margin: 0 1.0416666666666665%;
-  height: 400px;
 }
 .showreel a {
   text-decoration: none;
@@ -929,20 +950,133 @@ footer .credits {
   margin: 0 1.0416666666666665%;
   border-top: 1px solid #2f3b48;
 }
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 50%;
+@media only screen and (max-width: 910px) {
+  header h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  header h3 {
+    font-size: 5.2rem;
+  }
+  header h3 small {
+    font-size: 3.6rem;
   }
   body {
-    position: relative;
+    background: url(../img/bg_body_blue.png) 0 0 repeat-x;
   }
-  body::after {
-    content: "elastic font-pixels";
+  .showreel {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .showreel h2 {
+    top: 300px;
+    width: 100%;
+    font-size: 26px;
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .showreel h2 span {
+    display: inline;
+  }
+  .showreel .shooreel-main {
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header h2 {
+    font-size: 1.4rem;
+    margin-top: 33px;
+  }
+  header h3 {
+    font-size: 4.8rem;
+  }
+  header h3 small {
+    font-size: 3.2rem;
+  }
+  .showreel h1 {
+    font-size: 2rem;
+  }
+  .showreel h2 {
+    top: 280px;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+  .showreel .shooreel-main {
+    margin-bottom: 140px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  header h2 {
+    font-size: 1.5rem;
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #0000ff;
-    color: #ffffff;
-    padding: 10px;
+    top: 60px;
+    width: 100%;
+    color: #fff;
+  }
+  header .conference {
+    color: #fff;
+  }
+  header .social {
+    margin-top: 22px;
+  }
+  header h3 {
+    margin-top: 75px;
+    display: block;
+    font-size: 4.2rem;
+    text-align: center;
+  }
+  header h3 small {
+    display: inline;
+  }
+  header .logo a {
+    min-width: 175px;
+  }
+  .showreel h2 {
+    top: 270px;
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 570px) {
+  header h2 {
+    font-size: 1.2rem;
+  }
+  header h3 {
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+  .showreel {
+    margin-top: 0;
+  }
+  .showreel .shooreel-main {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .showreel .photos {
+    display: none;
+  }
+  .showreel h1 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .showreel h2 {
+    position: inherit;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  header h2 {
+    font-size: 1.5rem;
+    top: 80px;
+    text-align: center;
+  }
+  header h3 {
+    margin-top: 70px;
+    text-align: center;
+  }
+  header .logo a {
+    min-width: 160px;
   }
 }

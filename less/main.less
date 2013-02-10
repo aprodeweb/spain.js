@@ -106,7 +106,7 @@
 }
 
 html {
-  background: url(../img/subtle_grunge.png) 0 0 repeat;
+  /*background: url(../img/subtle_grunge.png) 0 0 repeat;*/
   font-size: 62.5%;
 }
 
@@ -142,12 +142,15 @@ header {
     position: absolute;
     top: -1px;
     margin: 0;
+    width:35%;
     a {
       display: block;
-      width: 320px;
+      width: 100%;
+      max-width: 320px;
       height: 240px;
       .hide-text();
       background: url(../img/logo.png) 0 0 no-repeat;
+      background-size: 100% auto;
     }
   }
 
@@ -157,11 +160,12 @@ header {
 
   h2 {
     margin-top: 26px;
-    .font-size(2.4);
+    .font-size(2);
   }
 
   h3 {
-    .font-size(6);
+    .font-size(5.8);
+    line-height: 1.1;
     color: #fff;
     margin-top: 20px;
 
@@ -186,6 +190,7 @@ header {
 
   h2 {
     color: #5f7592;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
   }
 
   .js {
@@ -216,7 +221,9 @@ header {
   background: url(../img/find_email.png) 0 0 no-repeat;
 
 }
-
+.social .lanyrd a {
+  background: url(../img/find_lanyrd.png) 0 0 no-repeat;
+}
 .social .twitter a {
   background: url(../img/find_twitter.png) 0 0 no-repeat;
 }
@@ -224,11 +231,16 @@ header {
 .showreel {
   .clearfix();
   position: relative;
+  margin-top: 80px;
   margin-bottom: 35px;
   color: #fbfbf8;
 
   .shooreel-main {
     .column(5);
+  }
+
+  h1,h2 {
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
   }
 
   h1 {
@@ -237,20 +249,27 @@ header {
     line-height: 1.21;
     margin-bottom: 50px;
   }
+  h1 span {
+   color: #7fb1f6;
+  }
 
   h2 {
-    .font-size(3);
+    .font-size(2.9);
     position: absolute;
     top: 270px;
     font-family: @sansita;
     font-weight: normal;
     text-align: right;
-    line-height: 1.21;
+    line-height: 1;
+    margin-top:0.3em;
+    span {
+      display: block;
+    }
   }
 
   .photos {
     text-align: right;
-
+    margin-bottom: 20px;
     img {
       width: 100%;
     }
@@ -258,7 +277,6 @@ header {
 
   aside {
     .column(7);
-    height: 400px;
   }
 
   a {
@@ -446,14 +464,157 @@ footer {
   }
 }
 
-//Example of rem use for elastic font-pixels :D
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 50%;
+//Media Queries
+
+@media only screen and (max-width: 910px) {
+  header h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  header h3 {
+    font-size: 5.2rem;
+  }
+  header h3 small{
+    font-size: 3.6rem;
   }
 
   body {
-    #dev > .label("elastic font-pixels");
+    background: url(../img/bg_body_blue.png) 0 0 repeat-x;
   }
+  .showreel {
+    margin-top:30px;
+    margin-bottom: 0px;
+    h2{
+      top: 300px;
+      width:100%;
+      .font-size(2.6);
+      text-align: center;
+      span {
+        display:inline;
+      }
+    }
+    .shooreel-main {
+     margin-bottom:150px;
+   }
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+ 
+  header {
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 33px;
+    }
+    h3 {
+      font-size: 4.8rem;
+      small{
+      font-size: 3.2rem;
+      }
+    }
+  }
+  .showreel {
+    h1 {
+      font-size: 2rem;
+    }
+    h2{
+      top: 280px;
+      .font-size(2.2);
+    }
+    .shooreel-main {
+     margin-bottom:140px;
+   }
+  }
+
+}
+
+@media only screen and (max-width: 670px) {
+  header {
+    h2 {
+      font-size: 1.5rem;
+      display: block;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      color:#fff;
+    }
+    .conference {
+      color: #fff;
+    }
+    .social {
+      margin-top: 22px;
+    }
+    h3 {
+      margin-top: 75px;
+      display: block;
+      font-size: 4.2rem;
+      text-align: center;
+      small {
+        display: inline;
+      }
+    }
+    .logo a {
+      min-width: 175px;
+    }
+  }
+  .showreel {
+    h2{
+      top: 270px;
+      .font-size(2.2);
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 570px) {
+  header {
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      margin-top: 55px;
+      margin-bottom: 20px;
+    }
+  }
+  .showreel {
+    margin-top:0;
+    .shooreel-main {
+     width:100%;
+     margin-bottom: 40px;
+    }
+    .photos {
+      display: none;
+    }
+    h1 {
+      margin-bottom: 20px;
+      margin-top: 0px;
+      text-align: center;
+    }
+    h2 {
+      position:inherit;
+      margin-top: 20px;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 479px) {
+  header {
+    h2 {
+      font-size: 1.5rem;
+      top: 80px;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 70px;
+      text-align: center;
+    }
+    .logo a {
+      min-width: 160px;
+    }
+  }
+  
 }
 
