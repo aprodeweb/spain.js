@@ -31,7 +31,7 @@
   http://drublic.de/blog/html5-boilerplate-favicons-psd-template/
   -->
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700|Sansita+One">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Sansita+One">
 
   <link rel="stylesheet" href="css/main.css">
 
@@ -51,9 +51,9 @@
         <div class="subtitles">
           <h2>A summer <span class="js">javascript</span> <span class="conference">conference</span></h2>
           <ul class="social">
-            <li class="lanyrd"><a href="http://lanyrd.com/2013/spainjs/">Lanyrd</a></li>
-            <li class="twitter"><a href="http://twitter.com/spainjs">Twitter</a></li>
-            <li class="mail"><a href="mailto:hello@spainjs.org">Email</a></li>
+            <li class="lanyrd"><a href="http://lanyrd.com/2013/spainjs/" target="_blank">Lanyrd</a></li>
+            <li class="twitter"><a href="http://twitter.com/spainjs" target="_blank">Twitter</a></li>
+            <li class="mail"><a href="mailto:hello@spainjs.org" target="_blank">Email</a></li>
           </ul>
           <h3>July 4-6, 2013 <small>Madrid</small></h3>
         </div>
@@ -64,12 +64,12 @@
   </div>  
   <nav class="menu">
     <ul class="wrap">
-      <li {{page.index}}><a href="index.html">Speakers</a></li>
-      <li {{page.venue}}><a href="venue.html">Venue</a></li>
-      <li {{page.schedule}}><a href="" class="commingsoon">Schedule</a></li>
-      <li {{page.ticktes}}><a href="" class="commingsoon">Ticktes</a></li>
-      <li {{page.sponsors}}><a href="sponsors.html">Sponsors</a></li>
-      <li {{page.about}}><a href="about.html">About</a></li>
+      <li {{page.speakers}}><a href="#speakers" >Speakers</a></li>
+      <li {{page.venue}}><a href="#venue">Venue</a></li>
+      <li {{page.schedule}} class="comingsoon"><a >Schedule</a></li>
+      <li {{page.tickets}} class="comingsoon"><a >Tickets</a></li>
+      <li {{page.sponsors}}><a href="#sponsors">Sponsors</a></li>
+      <li {{page.about}}><a href="#about">About</a></li>
     </ul>
   </nav>
   
@@ -78,24 +78,24 @@
     {{ content }}
   </section>
   
-  {% if page.sponsors %}
+  {% if page.showSponsors %}
     {% include sponsors.phtml %}
   {% endif %}
   
   <footer>
     <div class="wrap clearfix">
-      <section class="about">
+      <section class="about" id="about">
         <h1>About</h1>
         <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
-        <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.</p>
+        <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/boton" target="_blank">Jorge González</a> and <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.</p>
       </section>
       <aside class="networking">
         <h1>Networking</h1>
-        <div class="wrap"></div>
+        <div class="wrap"> </div>
       </aside>
       <div class="credits">
-        <a href="humans.txt" class="humanstxt"><img src="img/humanstxt.png"/></a>
-        <a href="" class="github">hosted by <span>github</span></a>
+        <a href="humans.txt" class="humanstxt" target="_blank"><img src="img/humanstxt.png"/></a>
+        <a href="//github.com/aprodeweb/spain.js" class="github" target="_blank">hosted by <span>github</span></a>
       </div>
     </div>
   </footer>

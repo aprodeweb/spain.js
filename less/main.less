@@ -27,7 +27,7 @@
 
 //http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
 .hide-text() {
-  text-indent: 100%;
+  text-indent: 300%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -292,6 +292,7 @@ header {
   border: 1px solid #b2b3ad;
   border-width: 1px 0;
   background: url(../img/bg_nav.png) 0 0 repeat;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, .3);
 
   li {
     .column(2);
@@ -302,16 +303,33 @@ header {
     padding: 20px 0;
     color: #fff;
     .font-size(1.8);
-    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+    text-shadow: 0 1px 0px rgba(0,0,0,.8);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
   }
 
-  .current a {
-    color: #706f6a;
-    text-shadow: 0 1px 1px rgba(255,255,255,.8);
+  li:not(.comingsoon) {
+    .current a, a:active, a:hover {
+      color: #706f6a;
+      text-shadow: 0 1px 0px rgba(255,255,255,1);
+    }
   }
+
+  .comingsoon {
+    a {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+
+  .comingsoon:hover, .comingsoon:active {
+    background: url(../img/coming_soon.png) center center no-repeat;
+    a {
+       opacity: 0.1;
+    }
+  }
+
 }
 
 
@@ -331,8 +349,10 @@ header {
 
 
 #main {
-  background: url(../img/subtle_grunge.png) 0 0 repeat;
-  margin-bottom: 30px;
+  background: url(../img/bg_content.png) 0 0 repeat;
+  padding-bottom: 80px;
+  margin-bottom: -5px;
+  box-shadow: inset 1px 0 2px rgba(0, 0, 0, .3);
 
   h1, h2 {
     .font-size(4);
@@ -342,7 +362,9 @@ header {
 
   h1 {
     color: #97968d;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
     background: url(../img/hr_dashed_shadow.png) 0 100% no-repeat;
+    background-size: 120% 13px;
     padding: 0 1.0416666666666665% 20px;
   }
 
@@ -353,11 +375,25 @@ header {
   h2 {
     color: #3e5169;
     .font-size(2.4);
+    margin-bottom: 0;
   }
 
   h3 {
-    color: #b2b3ad;
+    color: #97968d;
     .font-size(2);
+    font-weight: 200;
+    line-height: 1;
+    padding-bottom: 12px;
+    margin-top: 2px;
+    border-bottom: 1px solid #b7b6ab;
+  }
+
+  h4 {
+    font-style: italic;
+    color: #5f7592;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: -10px;
   }
 
   article {
@@ -373,47 +409,59 @@ header {
 
     text-align: right;
 
-    img {
+    img, .map {
       border: 1px solid #fff;
-      width: 92%;
-      padding: 4%;
+      width: 95%;
+      padding: 2.5%;
       background-color: #eee;
     }
 
   }
+
 }
 
+#googlemap {
+    height:200px;
+    background-color: #ccc;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, .4);
+}
 
 .call-papers {
   text-align: right;
+  margin-top: 20px;
 }
 
 
 .gallery {
   .clearfix();
 
-  margin: 20px 0;
+  margin: 30px 0 20px 0;
 
   li {
     .column(4);
+    padding-bottom: 10px;
+    background: transparent url(../img/photos_shadow.png) center 100% no-repeat;
+    background-size: 92% 10px;
   }
 
-  img {
-    border: 1px solid #fff;
-    padding: 4%;
-    background-color: #eee;
-    width: 92%;
+  .img {
+    width:92%;
+    margin: 0 2.6%;
+    background-color: #eeeeeb;
+    border:1px solid #fff;
+    padding: 8px 8px 6px;
+
+    img {
+      width: 100%;
+    }
   }
+
 }
 
-.sponsors, footer {
-  border-top: 3px solid #EDEEEE;
-  box-shadow: 0 4px 15px 0px black;
-  background-color: rgba(0, 0, 0, 0.05);
-}
 
 .sponsors {
-  margin-top: 30px;
+
+  background: url(../img/bg_sponsors_2.png) 0 0 repeat-x, url(../img/bg_sponsors.png) 0 0 repeat;
 
   ul {
     .clearfix();
@@ -441,8 +489,12 @@ header {
 footer {
   padding: 40px 0;
   color: #fff;
-  background: url(../img/bg_footer.png) 0 -5px repeat-x;
+  background: #182832 url(../img/bg_footer.png) 0 0 repeat-x;
   .font-size(1.2);
+
+  a {
+    color:#fff;
+  }
 
   h1 {
     .font-size(1.8);
@@ -452,15 +504,49 @@ footer {
 
   .about {
     .column(8);
+    h1 {
+      text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    }
+    p {
+      padding-right: 10px;
+     }
+    background: transparent url(../img/about_border.gif) 100% 0 repeat-y;
+    margin-bottom: 12px;
   }
 
   .networking {
     .column(4);
+
+    .wrap {
+      border: 1px solid rgba(255,255,255,0.3);
+      background-color: rgba(95,117,146,0.3);
+      height:60px;
+      min-width: 290px;
+      .border-radius(3px);
+    }
   }
 
   .credits {
     .column(12);
     border-top: 1px solid #2f3b48;
+    .github {
+      float:right;
+      position: relative;
+      padding-top: 4px;
+      padding-right: 30px;
+      color:#7b8086;
+      text-decoration: none;
+      span {
+        position: absolute;
+        right:0px;
+        top:6px;
+        .hide-text();
+        background: transparent url(../img/github.png) 0 0 no-repeat;
+        display: inline-block;
+        width:25px;
+        height:25px;
+      }
+    }
   }
 }
 
@@ -497,7 +583,16 @@ footer {
      margin-bottom:150px;
    }
   }
-  
+  footer {
+    .about {
+      .column(6);
+       margin-bottom: 12px;
+     }
+
+    .networking {
+      .column(6);
+    }
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -525,6 +620,20 @@ footer {
     .shooreel-main {
      margin-bottom:140px;
    }
+  }
+
+  #main {
+    article .main {
+      .column(12);
+    }
+
+    .visual {
+      .column(12);
+      img, .map {
+        width: 97%;
+        padding: 1.5%;
+      }
+    }
   }
 
 }
@@ -564,7 +673,20 @@ footer {
       .font-size(2.2);
     }
   }
-
+  .menu {
+    a {
+      font-size: 1.6rem;
+    }
+  }
+  
+  footer {
+    .networking {
+      .wrap {
+        min-width: 200px;
+        height:100px;
+      }
+    }
+  }
 
 }
 
@@ -597,6 +719,30 @@ footer {
       margin-top: 20px;
     }
   }
+  .menu {
+    padding:6px 0 2px 0;
+    li {
+      .column(4);
+    }
+    a {
+      padding:0 0 4px 0;
+    }
+    .comingsoon:hover, .comingsoon:active {
+      background-size: auto 100%;
+    } 
+  }
+
+  .gallery {
+
+    li {
+      .column(6);
+    }
+
+    .img {
+      padding: 4px 4px 3px;
+    }
+
+  }
   
 }
 
@@ -613,6 +759,21 @@ footer {
     }
     .logo a {
       min-width: 160px;
+    }
+  }
+  footer {
+    .about {
+      .column(12);
+      background-image: none;
+     }
+
+    .networking {
+      .column(12);
+       margin-bottom: 12px;
+      .wrap {
+        min-width: auto;
+        height:60px;
+      }
     }
   }
   

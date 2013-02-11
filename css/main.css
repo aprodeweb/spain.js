@@ -535,7 +535,7 @@ header .logo a {
   width: 100%;
   max-width: 320px;
   height: 240px;
-  text-indent: 100%;
+  text-indent: 300%;
   white-space: nowrap;
   overflow: hidden;
   background: url(../img/logo.png) 0 0 no-repeat;
@@ -590,7 +590,7 @@ header .conference {
   padding-left: 8px;
 }
 .social a {
-  text-indent: 100%;
+  text-indent: 300%;
   white-space: nowrap;
   overflow: hidden;
   display: block;
@@ -684,6 +684,7 @@ header .conference {
   border: 1px solid #b2b3ad;
   border-width: 1px 0;
   background: url(../img/bg_nav.png) 0 0 repeat;
+  box-shadow: 1px 0 2px rgba(0, 0, 0, 0.3);
 }
 .menu:before,
 .menu:after {
@@ -713,14 +714,28 @@ header .conference {
   color: #fff;
   font-size: 18px;
   font-size: 1.8rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 0px rgba(0, 0, 0, 0.8);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-.menu .current a {
+.menu li:not(.comingsoon) .current a,
+.menu li:not(.comingsoon) a:active,
+.menu li:not(.comingsoon) a:hover {
   color: #706f6a;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 0px #ffffff;
+}
+.menu .comingsoon a {
+  opacity: 0.4;
+  cursor: default;
+}
+.menu .comingsoon:hover,
+.menu .comingsoon:active {
+  background: url(../img/coming_soon.png) center center no-repeat;
+}
+.menu .comingsoon:hover a,
+.menu .comingsoon:active a {
+  opacity: 0.1;
 }
 .btn-wrap {
   text-align: center;
@@ -765,8 +780,10 @@ header .conference {
   padding: 9px 39.6px;
 }
 #main {
-  background: url(../img/subtle_grunge.png) 0 0 repeat;
-  margin-bottom: 30px;
+  background: url(../img/bg_content.png) 0 0 repeat;
+  padding-bottom: 80px;
+  margin-bottom: -5px;
+  box-shadow: inset 1px 0 2px rgba(0, 0, 0, 0.3);
 }
 #main h1,
 #main h2 {
@@ -777,7 +794,9 @@ header .conference {
 }
 #main h1 {
   color: #97968d;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
   background: url(../img/hr_dashed_shadow.png) 0 100% no-repeat;
+  background-size: 120% 13px;
   padding: 0 1.0416666666666665% 20px;
 }
 #main h2,
@@ -788,11 +807,24 @@ header .conference {
   color: #3e5169;
   font-size: 24px;
   font-size: 2.4rem;
+  margin-bottom: 0;
 }
 #main h3 {
-  color: #b2b3ad;
+  color: #97968d;
   font-size: 20px;
   font-size: 2rem;
+  font-weight: 200;
+  line-height: 1;
+  padding-bottom: 12px;
+  margin-top: 2px;
+  border-bottom: 1px solid #b7b6ab;
+}
+#main h4 {
+  font-style: italic;
+  color: #5f7592;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-bottom: -10px;
 }
 #main article {
   *zoom: 1;
@@ -826,18 +858,25 @@ header .conference {
   margin: 0 1.0416666666666665%;
   text-align: right;
 }
-#main .visual img {
+#main .visual img,
+#main .visual .map {
   border: 1px solid #fff;
-  width: 92%;
-  padding: 4%;
+  width: 95%;
+  padding: 2.5%;
   background-color: #eee;
+}
+#googlemap {
+  height: 200px;
+  background-color: #ccc;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
 }
 .call-papers {
   text-align: right;
+  margin-top: 20px;
 }
 .gallery {
   *zoom: 1;
-  margin: 20px 0;
+  margin: 30px 0 20px 0;
 }
 .gallery:before,
 .gallery:after {
@@ -860,21 +899,22 @@ header .conference {
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
+  padding-bottom: 10px;
+  background: transparent url(../img/photos_shadow.png) center 100% no-repeat;
+  background-size: 92% 10px;
 }
-.gallery img {
-  border: 1px solid #fff;
-  padding: 4%;
-  background-color: #eee;
+.gallery .img {
   width: 92%;
+  margin: 0 2.6%;
+  background-color: #eeeeeb;
+  border: 1px solid #fff;
+  padding: 8px 8px 6px;
 }
-.sponsors,
-footer {
-  border-top: 3px solid #EDEEEE;
-  box-shadow: 0 4px 15px 0px black;
-  background-color: rgba(0, 0, 0, 0.05);
+.gallery .img img {
+  width: 100%;
 }
 .sponsors {
-  margin-top: 30px;
+  background: url(../img/bg_sponsors_2.png) 0 0 repeat-x, url(../img/bg_sponsors.png) 0 0 repeat;
 }
 .sponsors ul {
   *zoom: 1;
@@ -921,9 +961,12 @@ footer {
 footer {
   padding: 40px 0;
   color: #fff;
-  background: url(../img/bg_footer.png) 0 -5px repeat-x;
+  background: #182832 url(../img/bg_footer.png) 0 0 repeat-x;
   font-size: 12px;
   font-size: 1.2rem;
+}
+footer a {
+  color: #fff;
 }
 footer h1 {
   font-size: 18px;
@@ -936,6 +979,14 @@ footer .about {
   float: left;
   width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
+  background: transparent url(../img/about_border.gif) 100% 0 repeat-y;
+  margin-bottom: 12px;
+}
+footer .about h1 {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+}
+footer .about p {
+  padding-right: 10px;
 }
 footer .networking {
   display: inline;
@@ -943,12 +994,44 @@ footer .networking {
   width: 31.25%;
   margin: 0 1.0416666666666665%;
 }
+footer .networking .wrap {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(95, 117, 146, 0.3);
+  height: 60px;
+  min-width: 290px;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+}
 footer .credits {
   display: inline;
   float: left;
   width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
   border-top: 1px solid #2f3b48;
+}
+footer .credits .github {
+  float: right;
+  position: relative;
+  padding-top: 4px;
+  padding-right: 30px;
+  color: #7b8086;
+  text-decoration: none;
+}
+footer .credits .github span {
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent url(../img/github.png) 0 0 no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
 }
 @media only screen and (max-width: 910px) {
   header h2 {
@@ -981,6 +1064,19 @@ footer .credits {
   .showreel .shooreel-main {
     margin-bottom: 150px;
   }
+  footer .about {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+    margin-bottom: 12px;
+  }
+  footer .networking {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
 }
 @media only screen and (max-width: 767px) {
   header h2 {
@@ -1003,6 +1099,23 @@ footer .credits {
   }
   .showreel .shooreel-main {
     margin-bottom: 140px;
+  }
+  #main article .main {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .visual {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .visual img,
+  #main .visual .map {
+    width: 97%;
+    padding: 1.5%;
   }
 }
 @media only screen and (max-width: 670px) {
@@ -1037,6 +1150,13 @@ footer .credits {
     font-size: 22px;
     font-size: 2.2rem;
   }
+  .menu a {
+    font-size: 1.6rem;
+  }
+  footer .networking .wrap {
+    min-width: 200px;
+    height: 100px;
+  }
 }
 @media only screen and (max-width: 570px) {
   header h2 {
@@ -1065,6 +1185,31 @@ footer .credits {
     position: inherit;
     margin-top: 20px;
   }
+  .menu {
+    padding: 6px 0 2px 0;
+  }
+  .menu li {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416666666666665%;
+  }
+  .menu a {
+    padding: 0 0 4px 0;
+  }
+  .menu .comingsoon:hover,
+  .menu .comingsoon:active {
+    background-size: auto 100%;
+  }
+  .gallery li {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  .gallery .img {
+    padding: 4px 4px 3px;
+  }
 }
 @media only screen and (max-width: 479px) {
   header h2 {
@@ -1078,5 +1223,23 @@ footer .credits {
   }
   header .logo a {
     min-width: 160px;
+  }
+  footer .about {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    background-image: none;
+  }
+  footer .networking {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    margin-bottom: 12px;
+  }
+  footer .networking .wrap {
+    min-width: auto;
+    height: 60px;
   }
 }
