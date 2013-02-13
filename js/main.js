@@ -34,7 +34,7 @@ define(['jquery', 'bootstrap', 'smoothScroll'], function($) {
     links = null;
   };
 
-  //Launch plugins on dom ready
+  //Launch
   $(function() {
 
     fixMenu();
