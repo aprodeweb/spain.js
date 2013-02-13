@@ -330,8 +330,35 @@ header {
     }
   }
 
+  .wrap div {
+    display: none;
+    a {
+      display: block;
+      width: 100%;
+      .hide-text();
+      background: url(../img/logo_fixed.png) center center no-repeat;
+      background-size: 90% auto;
+    }
+    li {
+      .column(12);
+    }
+  }
+
 }
 
+.menu.affix {
+  position: fixed;
+  top:0px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, .8);
+
+  .wrap div {
+    .column(1);
+  }
+  ul {
+    .column(11);
+  }
+
+}
 
 
 .btn-wrap {
@@ -421,7 +448,7 @@ header {
 }
 
 #googlemap {
-    height:200px;
+    height:240px;
     background-color: #ccc;
     box-shadow: inset 0 0 4px rgba(0, 0, 0, .4);
 }
@@ -523,6 +550,14 @@ footer {
       height:60px;
       min-width: 290px;
       .border-radius(3px);
+    }
+    ul {
+      list-style: none outside none;
+      padding: 20px 1% 20px 7%;
+    }
+    li {
+      display: inline-block;
+      .column(4);
     }
   }
 
@@ -683,7 +718,14 @@ footer {
     .networking {
       .wrap {
         min-width: 200px;
-        height:100px;
+        min-height:120px;
+      }
+      ul {
+      padding: 16px 10% 16px 10%;
+      }
+      li {
+        .column(12);
+        margin-bottom: 10px;
       }
     }
   }
@@ -772,7 +814,14 @@ footer {
        margin-bottom: 12px;
       .wrap {
         min-width: auto;
+        min-height: auto;
         height:60px;
+      }
+      ul {
+        padding: 20px 1% 20px 7%;
+      }
+      li {
+        .column(4);
       }
     }
   }

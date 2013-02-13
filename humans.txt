@@ -4,7 +4,6 @@
 /* TEAM */
   Designer: Javier Brea
   Front End Developer: Javier Brea
-  Site: www.javierbrea.com
   Twitter: @javierbrea
 
   Front End Developer: Jorge González
@@ -15,7 +14,7 @@
   Components: Modernizr, jQuery, Google Web Fonts API
   WebFonts: Lato by Łukasz Dziedzic, Sansita one by Omnibus-Type
   Software: Notepad++, Adobe Photoshop CS5, Adobe Illustrator CS5, Sublime Text 2
-  Thanks to: html5boilerplate.com, icondock.com/free/mono-social-icons, lesscss.org, lesshat.com, semantic.gs, git.io/normalize
+  Thanks to: html5boilerplate.com, lesscss.org, lesshat.com, semantic.gs, git.io/normalize, twitter.github.com/bootstrap/, github.com/kswedberg/jquery-smooth-scroll, 960.gs, jquery.com, requirejs.org, google.com/webfonts
 
 ':::::::::::::::::::::::::;,..
 xNNNNNNNNNNNNNNNNNNNNNX0xl;'..................

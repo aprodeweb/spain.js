@@ -737,6 +737,41 @@ header .conference {
 .menu .comingsoon:active a {
   opacity: 0.1;
 }
+.menu .wrap div {
+  display: none;
+}
+.menu .wrap div a {
+  display: block;
+  width: 100%;
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../img/logo_fixed.png) center center no-repeat;
+  background-size: 90% auto;
+}
+.menu .wrap div li {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+.menu.affix {
+  position: fixed;
+  top: 0px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.8);
+}
+.menu.affix .wrap div {
+  display: inline;
+  float: left;
+  width: 6.25%;
+  margin: 0 1.0416666666666665%;
+}
+.menu.affix ul {
+  display: inline;
+  float: left;
+  width: 89.58333333333334%;
+  margin: 0 1.0416666666666665%;
+}
 .btn-wrap {
   text-align: center;
 }
@@ -866,7 +901,7 @@ header .conference {
   background-color: #eee;
 }
 #googlemap {
-  height: 200px;
+  height: 240px;
   background-color: #ccc;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
 }
@@ -1005,6 +1040,17 @@ footer .networking .wrap {
   -moz-background-clip: padding;
   border-radius: 3px;
   background-clip: padding-box;
+}
+footer .networking ul {
+  list-style: none outside none;
+  padding: 20px 1% 20px 7%;
+}
+footer .networking li {
+  display: inline-block;
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
 }
 footer .credits {
   display: inline;
@@ -1155,7 +1201,17 @@ footer .credits .github span {
   }
   footer .networking .wrap {
     min-width: 200px;
-    height: 100px;
+    min-height: 120px;
+  }
+  footer .networking ul {
+    padding: 16px 10% 16px 10%;
+  }
+  footer .networking li {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -1240,6 +1296,16 @@ footer .credits .github span {
   }
   footer .networking .wrap {
     min-width: auto;
+    min-height: auto;
     height: 60px;
+  }
+  footer .networking ul {
+    padding: 20px 1% 20px 7%;
+  }
+  footer .networking li {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416666666666665%;
   }
 }

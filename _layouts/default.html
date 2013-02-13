@@ -13,7 +13,7 @@
   <meta name="geo.placename" content="Madrid" />
 
   <!-- Open Graph protocol -->
-  <meta property="og:image" content="http://www.spainjs.org/img/header_spain.png" />
+  <meta property="og:image" content="http://www.spainjs.org/img/logo.png" />
   <meta property="og:title" content="A Summer JavaScript Conference in Madrid, Spain" />
   <meta property="og:type" content="conference" />
   <meta property="og:url" content="http://www.spainjs.org" />
@@ -23,7 +23,7 @@
   <html itemscope itemtype="http://schema.org/Article">
   <meta itemprop="name" content="Spain JS">
   <meta itemprop="description" content="A Summer JavaScript Conference in Madrid, Spain">
-  <meta itemprop="image" content="http://www.spainjs.org/img/header_spain.png">
+  <meta itemprop="image" content="http://www.spainjs.org/img/logo.png">
   <!-- /Google Plus1 -->
   <meta name="viewport" content="width=device-width">
 
@@ -38,14 +38,14 @@
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
-<body>
+<body >
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
   <div class="wrap">
     <header>
-        <h1 class="logo">
+        <h1 class="logo" id="logo">
           <a href="./" rel="home">Spain JS</a>
         </h1>
         <div class="subtitles">
@@ -61,18 +61,24 @@
       {% if page.showreel %}
         {% include showreel1.phtml %}
       {% endif %}
-  </div>  
-  <nav class="menu">
-    <ul class="wrap">
-      <li {{page.speakers}}><a href="#speakers" >Speakers</a></li>
-      <li {{page.venue}}><a href="#venue">Venue</a></li>
-      <li {{page.schedule}} class="comingsoon"><a >Schedule</a></li>
-      <li {{page.tickets}} class="comingsoon"><a >Tickets</a></li>
-      <li {{page.sponsors}}><a href="#sponsors">Sponsors</a></li>
-      <li {{page.about}}><a href="#about">About</a></li>
-    </ul>
-  </nav>
-  
+  </div>
+  <div>
+    <nav class="menu">
+      <div class="wrap">
+        <div>
+            <a href="#logo">Spain JS</a>
+        </div>
+        <ul >
+            <li {{page.speakers}}><a href="#speakers" >Speakers</a></li>
+            <li {{page.venue}}><a href="#venue">Venue</a></li>
+            <li {{page.schedule}} class="comingsoon"><a >Schedule</a></li>
+            <li {{page.tickets}} class="comingsoon"><a >Tickets</a></li>
+            <li {{page.sponsors}}><a href="#sponsors">Sponsors</a></li>
+            <li {{page.about}}><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   
   <section id="main">
     {{ content }}
@@ -86,12 +92,32 @@
     <div class="wrap clearfix">
       <section class="about" id="about">
         <h1>About</h1>
-        <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> and <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>. </p>
+        <p>Spain.js is a non-profit volunteer-driven event run by the Spanish Association for Promoting Web Development (APRODEWEB) managed by <a href="http://twitter.com/samlown" target="_blank">Sam Lown</a>, <a href="http://twitter.com/rafaelrebolleda" target="_blank">Rafael Rebolleda</a>, <a href="http://twitter.com/lpsandroni" target="_blank">Lorena P. Sandroni</a>, <a href="http://twitter.com/ialcazar" target="_blank">Israel Alcázar</a>, <a href="http://twitter.com/eamodeorubio" target="_blank">Enrique Amodeo</a>, <a href="http://twitter.com/oinak" target="_blank">Fernando Martinez</a> , <a href="http://twitter.com/arctarus" target="_blank">Gabriel Ortuño</a>, <a href="//twitter.com/boton" target="_blank">Jorge González</a> and <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a> </p>
         <p>Website designed by <a href="//twitter.com/javierbrea" target="_blank">Javier Brea</a>. Developed by <a href="//twitter.com/boton" target="_blank">Jorge González</a> and <a href="//twitter.com/javierbrea"  target="_blank">Javier Brea</a>.</p>
       </section>
       <aside class="networking">
         <h1>Networking</h1>
-        <div class="wrap"> </div>
+        <div class="wrap">
+          <ul>
+            <li class="shareBtn"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+              </script>
+            </li>
+            <li class="shareBtn">
+              <iframe src="http://www.facebook.com/plugins/like.php?locale=en_US&amp;href=http://www.spainjs.org&amp;send=false&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>
+            </li>
+            <li class="shareBtn"><g:plusone size="medium"></g:plusone>
+              <script type="text/javascript">
+                window.___gcfg = {lang: 'en'};
+                (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+              </script>
+            </li>
+          </ul>
+        </div>
       </aside>
       <div class="credits">
         <a href="humans.txt" class="humanstxt" target="_blank"><img src="img/humanstxt.png"/></a>
@@ -99,6 +125,6 @@
       </div>
     </div>
   </footer>
-
+  <script data-main="js/config" src="js/vendor/requirejs-2.1.4.min.js"></script>
 </body>
 </html>
