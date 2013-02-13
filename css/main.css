@@ -1296,7 +1296,7 @@ footer .credits .github span {
   }
   footer .networking .wrap {
     min-width: auto;
-    min-height: auto;
+    min-height: 60px;
     height: 60px;
   }
   footer .networking ul {
