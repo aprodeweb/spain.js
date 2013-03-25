@@ -9,7 +9,7 @@ define(['jquery', 'bootstrap', 'smoothScroll'], function($) {
 
   //"Offset height" changes when the window is resized and does not work properly, but providing a function to "bootstrap affix" to calculate the offset as the window changes makes the menu blinks all time
   fixMenu = function() {
-    var menu = $('nav');
+    var menu = $('nav.menu');
     menu.parent().css('min-height', menu.height());
 
     menu.affix({
@@ -23,7 +23,7 @@ define(['jquery', 'bootstrap', 'smoothScroll'], function($) {
 
   //Same page links use smooth scroll
   scrollLinks = function() {
-    var links = $('nav a');
+    var links = $('a.samepage');
 
     links.smoothScroll({
       offset: -40,
