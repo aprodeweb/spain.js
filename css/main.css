@@ -911,7 +911,8 @@ header .conference {
   background-color: #ccc;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
 }
-.call-papers {
+.call-papers,
+.become-sponsor {
   text-align: right;
   margin-top: 20px;
 }
@@ -1163,6 +1164,43 @@ footer .credits .github span {
 #main .speakers .main p {
   margin: 0;
 }
+#sponsors_detail h4 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b7b6ab;
+}
+#main .sponsors_list h1 {
+  color: #3e5169;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  background-image: none;
+  padding: 0;
+  text-shadow: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#main .sponsors_list .logo {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+}
+#main .sponsors_list .logo div {
+  background-size: 100%;
+}
+#main .sponsors_list .logo div img {
+  width: 100%;
+  border: 1px solid #B9B9B9;
+}
+#main .sponsors_list .main {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+#main .sponsors_list .main p {
+  margin-top: 0px;
+}
 @media only screen and (max-width: 910px) {
   header h2 {
     font-size: 1.8rem;
@@ -1247,6 +1285,18 @@ footer .credits .github span {
     width: 97%;
     padding: 1.5%;
   }
+  #main .sponsors_list .logo {
+    display: inline;
+    float: left;
+    width: 39.58333333333333%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .sponsors_list .main {
+    display: inline;
+    float: left;
+    width: 56.25%;
+    margin: 0 1.0416666666666665%;
+  }
 }
 @media only screen and (max-width: 670px) {
   header h2 {
@@ -1307,6 +1357,18 @@ footer .credits .github span {
     display: inline;
     float: left;
     width: 72.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .sponsors_list .logo {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .sponsors_list .main {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
     margin: 0 1.0416666666666665%;
   }
 }
@@ -1374,6 +1436,18 @@ footer .credits .github span {
     width: 64.58333333333334%;
     margin: 0 1.0416666666666665%;
   }
+  #main .sponsors_list .logo {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .sponsors_list .main {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
 }
 @media only screen and (max-width: 479px) {
   header h2 {
@@ -1430,6 +1504,19 @@ footer .credits .github span {
     display: inline-block;
   }
   #main .speakers .main {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  #main .sponsors_list .logo {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    max-width: 300px;
+  }
+  #main .sponsors_list .main {
     display: inline;
     float: left;
     width: 97.91666666666666%;
