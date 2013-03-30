@@ -10,11 +10,18 @@
   Twitter: @boton
 
 /* SITE */
+
   Standards: HTML5, CSS3
+
   Components: Modernizr, requireJs, jQuery, Google Web Fonts API, Bootstrap Affix, SmoothScroll jQuery plugin
+
   WebFonts: Lato by Łukasz Dziedzic, Sansita one by Omnibus-Type
+
   Software: Adobe Photoshop CS5, Adobe Illustrator CS5, Sublime Text 2
+
   Thanks to: html5boilerplate.com, lesscss.org, lesshat.com, semantic.gs, git.io/normalize, twitter.github.com/bootstrap/, github.com/kswedberg/jquery-smooth-scroll, 960.gs, jquery.com, requirejs.org, google.com/webfonts, icondock.com/free/mono-social-icons, subtlepatterns.com
+
+  Conference code of conduct: http://confcodeofconduct.com/
 
 ':::::::::::::::::::::::::;,..
 xNNNNNNNNNNNNNNNNNNNNNX0xl;'..................
