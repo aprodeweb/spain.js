@@ -1208,6 +1208,47 @@ footer .credits .github span {
 #main .sponsors_list .main p {
   margin-top: 0px;
 }
+#organizers h4 {
+  font-size: 2.4rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #B7B6AB;
+}
+#organizers ul {
+  margin-top: 40px;
+}
+#organizers li {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+}
+#organizers li div {
+  background-color: #eeeeeb;
+  border: 1px solid #fff;
+  float: left;
+  margin-right: 10px;
+  padding: 6px;
+  line-height: 0;
+  font-size: 0;
+  margin-bottom: 15px;
+}
+#organizers li h5 {
+  font-weight: 300;
+  font-style: italic;
+  color: #5F7592;
+  margin: 0;
+  font-size: 2.2rem;
+}
+#organizers li p {
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+#organizers li p a {
+  color: #000;
+  text-decoration: none;
+}
 @media only screen and (max-width: 910px) {
   header h2 {
     font-size: 1.8rem;
@@ -1302,6 +1343,12 @@ footer .credits .github span {
     display: inline;
     float: left;
     width: 56.25%;
+    margin: 0 1.0416666666666665%;
+  }
+  #organizers li {
+    display: inline;
+    float: left;
+    width: 47.91666666666667%;
     margin: 0 1.0416666666666665%;
   }
 }
@@ -1453,6 +1500,12 @@ footer .credits .github span {
     display: inline;
     float: left;
     width: 47.91666666666667%;
+    margin: 0 1.0416666666666665%;
+  }
+  #organizers li {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
     margin: 0 1.0416666666666665%;
   }
 }
