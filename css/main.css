@@ -981,16 +981,22 @@ header .conference {
 .sponsors .platinium li {
   display: inline;
   float: left;
-  width: 31.25%;
+  width: 47.91666666666667%;
   margin: 0 1.0416666666666665%;
 }
 .sponsors .gold li {
   display: inline;
   float: left;
-  width: 22.916666666666664%;
+  width: 31.25%;
   margin: 0 1.0416666666666665%;
 }
 .sponsors .silver li {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+}
+.sponsors .supporter li {
   display: inline;
   float: left;
   width: 14.583333333333334%;
@@ -1184,6 +1190,7 @@ footer .credits .github span {
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
+  margin-bottom: 20px;
 }
 #main .sponsors_list .logo div {
   background-size: 100%;
