@@ -1517,6 +1517,10 @@ footer .credits .github span {
     width: 47.91666666666667%;
     margin: 0 1.0416666666666665%;
   }
+  #tickets .pricingtable li span.ribbon,
+  #tickets .pricingtable li.registered span.ribbon {
+    background-size: 100% auto;
+  }
 }
 @media only screen and (max-width: 570px) {
   header h2 {
