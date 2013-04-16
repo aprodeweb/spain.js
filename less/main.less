@@ -358,6 +358,7 @@ header {
   position: fixed;
   top:0px;
   box-shadow: 1px 0 3px rgba(0, 0, 0, .8);
+ z-index:3000;
 
   .wrap div {
     .column(1);
@@ -769,6 +770,7 @@ footer {
       .column(3);
       list-style: none;
       padding-bottom: 15px;
+      position: relative;
       div {
       background-color: #e5e5e1;
       border:1px solid #b6b6b2;
@@ -789,6 +791,25 @@ footer {
         color:#fff;
         font-size: 1.8rem;
         font-weight: 300;
+      }
+      span.ribbon {
+        .hide-text();
+        display:block;
+        width: 100%;
+        position: absolute;
+        bottom:10px;
+        right:-6px;
+        background: transparent url(../img/sold_out.png) right bottom no-repeat;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    li.registered {
+      span.ribbon {
+        background: transparent url(../img/only_pre_registered.png) right bottom no-repeat;
+        margin: 0;
+        padding: 0;
       }
     }
     li.active {
@@ -816,6 +837,10 @@ footer {
 .get-tickets {
   text-align: center;
   margin-bottom: 60px;
+}
+.get-fan {
+  text-align: center;
+  font-size: 2rem;
 }
 
 

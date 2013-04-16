@@ -765,6 +765,7 @@ header .conference {
   position: fixed;
   top: 0px;
   box-shadow: 1px 0 3px rgba(0, 0, 0, 0.8);
+  z-index: 3000;
 }
 .menu.affix .wrap div {
   display: inline;
@@ -1270,6 +1271,7 @@ footer .credits .github span {
   margin: 0 1.0416666666666665%;
   list-style: none;
   padding-bottom: 15px;
+  position: relative;
 }
 #tickets .pricingtable li div {
   background-color: #e5e5e1;
@@ -1291,6 +1293,25 @@ footer .credits .github span {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 300;
+}
+#tickets .pricingtable li span.ribbon {
+  text-indent: 300%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: -6px;
+  background: transparent url(../img/sold_out.png) right bottom no-repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#tickets .pricingtable li.registered span.ribbon {
+  background: transparent url(../img/only_pre_registered.png) right bottom no-repeat;
+  margin: 0;
+  padding: 0;
 }
 #tickets .pricingtable li.active {
   margin-top: -6px;
@@ -1315,6 +1336,10 @@ footer .credits .github span {
 .get-tickets {
   text-align: center;
   margin-bottom: 60px;
+}
+.get-fan {
+  text-align: center;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 910px) {
   header h2 {
