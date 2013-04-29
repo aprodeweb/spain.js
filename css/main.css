@@ -1286,6 +1286,10 @@ footer .credits .github span {
   font-weight: 300;
   line-height: 1;
 }
+#tickets .pricingtable li span strike {
+  font-size: 1.6rem;
+  color: #ccc;
+}
 #tickets .pricingtable li span.type {
   padding: 10px 0;
   margin: 0;
@@ -1326,6 +1330,9 @@ footer .credits .github span {
   font-size: 2.4rem;
   color: #5e5e59;
   margin: 35px 0;
+}
+#tickets .pricingtable li.active span strike {
+  color: #999;
 }
 #tickets .pricingtable li.active span.type {
   font-size: 2rem;
