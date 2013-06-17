@@ -484,9 +484,6 @@ body:after {
   clear: both;
 }
 /* schedule specific */
-.schedule {
-  margin-top: 35px;
-}
 .schedule table {
   width: 100%;
 }
@@ -498,42 +495,50 @@ body:after {
   text-shadow: 0px -1px #000000;
   font-size: small;
 }
-.schedule table th .time_column {
-  width: 7%;
+.schedule table td.break {
+  text-align: center;
+  font-size: small;
 }
-.schedule table th .normal_column {
-  width: 28.6%;
+.schedule table td a {
+  text-decoration: none;
 }
-.schedule table td {
+.schedule table td a:hover {
+  text-decoration: underline;
+}
+.schedule table td.break {
+  color: #fff;
+  background-color: lightgray;
+}
+span.speaker {
+  font-variant: small-caps;
+}
+/* responsive schedule: */
+.schedule {
+  margin-top: 35px;
+}
+.schedule h2 {
+  padding-bottom: 25px;
+}
+.schedule td {
   border: 1px solid #777;
   border-radius: 4px;
+}
+.schedule td.empty_cell,
+.schedule td.break {
+  border: 0;
+}
+.schedule th.time_column {
+  width: 7%;
+}
+.schedule th.normal_column {
+  width: 28.6%;
+}
+.schedule td {
   vertical-align: middle;
   text-align: center;
   padding: 6px;
   border-collapse: separate;
   border-spacing: 12px;
-}
-.schedule table td .empty-cells {
-  border: 0;
-}
-.schedule table td .break {
-  text-align: center;
-  font-size: small;
-  color: #fff;
-  background-color: lightgray;
-  border: 0;
-}
-.schedule table td a {
-  text-decoration: none;
-}
-.schedule table td a :hover {
-  text-decoration: underline;
-}
-.schedule h2 {
-  padding-bottom: 25px;
-}
-span .speaker {
-  font-variant: small-caps;
 }
 section.schedule p {
   margin: 24px 0;
