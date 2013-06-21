@@ -5,7 +5,7 @@
 define(['jquery', 'bootstrap', 'smoothScroll'], function($) {
   'use strict';
 
-  var fixMenu, scrollLinks;
+  var fixMenu, scrollLinks, readMore;
 
   //"Offset height" changes when the window is resized and does not work properly, but providing a function to "bootstrap affix" to calculate the offset as the window changes makes the menu blinks all time
   fixMenu = function() {
@@ -34,12 +34,20 @@ define(['jquery', 'bootstrap', 'smoothScroll'], function($) {
     links = null;
   };
 
+  /* Extend Job Board */
+  readMore = function() {
+   $('.js-more', '#job_board').bind('click', function (e) {
+      e.preventDefault();
+      $(e.target).unbind('click').hide().parent().parent().find('.more').show();
+    });
+  };
+
   //Launch
   $(function() {
 
     fixMenu();
     scrollLinks();
-
+    readMore();
   });
 
 });
